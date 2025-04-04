@@ -18,7 +18,7 @@ RETURNSUMMARIZE(TableWithReplacements,&#39;BATCH_INCIDENT_NUM&#39;[INCIDENT],
 # From@{outputs(&#39;Run_a_query_against_a_dataset&#39;)?[&#39;body/firstTableRows&#39;]}# Value 直接引入@{item()?[&#39;BATCH_INCIDENT_NUM[SFC]&#39;]}@{item()?[&#39;[Engineer_Filled]&#39;]}# 引入变量@{variables(&#39;NCIF&#39;)}# Value 格式处理：浮点数小数位保留 2 位@{formatNumber(float(item()?[&#39;BATCH_INCIDENT_NUM[TIME]&#39;]), &#39;N2&#39;)} 在循环模块 Apply_to_each 中引用
 @{items(&#39;Apply_to_each&#39;)[&#39;[Engineer_Filled]&#39;]} 生成 HTML 表格 应用：在模块 Send an email (V2) 中，正文引入 @{outputs(‘Compose’)} 可以在邮件中发送表格。
 Create HTML table">
-    <meta property="og:url" content="https://astra726.github.io/WJnote/section4/topic41/index.html">
+    <meta property="og:url" content="https://astra726.github.io/WJNote/section4/topic41/index.html">
     <meta property="og:description" content="Power Automate 常用模块结果引入 Run_a_query_against_a_dataset 取决于 Query text 栏中，DAX 语句最后返回的结果，例如：
 RETURNSUMMARIZE(TableWithReplacements,&#39;BATCH_INCIDENT_NUM&#39;[INCIDENT],[Engineer_Filled], -- Use the new column) 引入时填写：
 # From@{outputs(&#39;Run_a_query_against_a_dataset&#39;)?[&#39;body/firstTableRows&#39;]}# Value 直接引入@{item()?[&#39;BATCH_INCIDENT_NUM[SFC]&#39;]}@{item()?[&#39;[Engineer_Filled]&#39;]}# 引入变量@{variables(&#39;NCIF&#39;)}# Value 格式处理：浮点数小数位保留 2 位@{formatNumber(float(item()?[&#39;BATCH_INCIDENT_NUM[TIME]&#39;]), &#39;N2&#39;)} 在循环模块 Apply_to_each 中引用
@@ -34,17 +34,17 @@ RETURNSUMMARIZE(TableWithReplacements,&#39;BATCH_INCIDENT_NUM&#39;[INCIDENT],
 Create HTML table">
     <meta itemprop="wordCount" content="262">
     <title></title>
-    <link href="../../WJnote/fonts/fontawesome/css/fontawesome-all.min.css?1743773687" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../WJnote/fonts/fontawesome/css/fontawesome-all.min.css?1743773687" rel="stylesheet"></noscript>
-    <link href="../../WJnote/css/perfect-scrollbar/perfect-scrollbar.min.css?1743773687" rel="stylesheet">
-    <link href="../../WJnote/css/theme.min.css?1743773687" rel="stylesheet">
-    <link href="../../WJnote/css/format-html.min.css?1743773687" rel="stylesheet" id="R-format-style">
-    <link href="../../WJnote/css/auto-complete/auto-complete.min.css?1743773687" rel="stylesheet">
-    <script src="../../WJnote/js/auto-complete/auto-complete.min.js?1743773687" defer></script>
-    <script src="../../WJnote/js/lunr/lunr.min.js?1743773687" defer></script>
-    <script src="../../WJnote/js/lunr/lunr.stemmer.support.min.js?1743773687" defer></script>
-    <script src="../../WJnote/js/lunr/lunr.multi.min.js?1743773687" defer></script>
-    <script src="../../WJnote/js/lunr/lunr.en.min.js?1743773687" defer></script>
-    <script src="../../WJnote/js/search.min.js?1743773687" defer></script>
+    <link href="../../WJNote/fonts/fontawesome/css/fontawesome-all.min.css?1743775153" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../WJNote/fonts/fontawesome/css/fontawesome-all.min.css?1743775153" rel="stylesheet"></noscript>
+    <link href="../../WJNote/css/perfect-scrollbar/perfect-scrollbar.min.css?1743775153" rel="stylesheet">
+    <link href="../../WJNote/css/theme.min.css?1743775153" rel="stylesheet">
+    <link href="../../WJNote/css/format-html.min.css?1743775153" rel="stylesheet" id="R-format-style">
+    <link href="../../WJNote/css/auto-complete/auto-complete.min.css?1743775153" rel="stylesheet">
+    <script src="../../WJNote/js/auto-complete/auto-complete.min.js?1743775153" defer></script>
+    <script src="../../WJNote/js/lunr/lunr.min.js?1743775153" defer></script>
+    <script src="../../WJNote/js/lunr/lunr.stemmer.support.min.js?1743775153" defer></script>
+    <script src="../../WJNote/js/lunr/lunr.multi.min.js?1743775153" defer></script>
+    <script src="../../WJNote/js/lunr/lunr.en.min.js?1743775153" defer></script>
+    <script src="../../WJNote/js/search.min.js?1743775153" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -52,9 +52,9 @@ Create HTML table">
       window.relearn.path='\/section4\/topic41\/index.html';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/astra726.github.io\/WJnote';
+      window.relearn.absBaseUri='https:\/\/astra726.github.io\/WJNote';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="../../WJnote/searchindex.en.js?1743773687";
+      window.relearn.index_js_url="../../WJNote/searchindex.en.js?1743775153";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -101,7 +101,7 @@ Create HTML table">
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
   </head>
-  <body class="mobile-support html" data-url="../../WJnote/section4/topic41/index.html">
+  <body class="mobile-support html" data-url="../../WJNote/section4/topic41/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -150,12 +150,12 @@ Create HTML table">
             </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="../../WJnote/section4/index.html"><span itemprop="name">MKDocs</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="../../WJNote/section4/index.html"><span itemprop="name">MKDocs</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../WJnote/section4/index.html" title="MKDocs (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../WJNote/section4/index.html" title="MKDocs (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../WJnote/section5/index.html" title="MKDocs (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../WJNote/section5/index.html" title="MKDocs (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -204,11 +204,11 @@ SUMMARIZE(
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>@{items(&#39;Apply_to_each&#39;)[&#39;[Engineer_Filled]&#39;]}</code></pre></div>
 <h2 id="生成-html-表格">生成 HTML 表格</h2>
 <p>应用：在模块 Send an email (V2) 中，正文引入 @{outputs(&lsquo;Compose&rsquo;)} 可以在邮件中发送表格。</p>
-<p><a href="#R-image-a0628e917ffebc26287593aa48e127b8" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/23095519.jpg" style=" height: auto; width: auto;" title=" "></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a0628e917ffebc26287593aa48e127b8"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/23095519.jpg" title=" "></a></p>
+<p><a href="#R-image-db0fdbcd16efb13217f77f4f48e579ac" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/23095519.jpg" style=" height: auto; width: auto;" title=" "></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-db0fdbcd16efb13217f77f4f48e579ac"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/23095519.jpg" title=" "></a></p>
 <h3 id="create-html-table">Create HTML table</h3>
-<p><a href="#R-image-203a65fc911e549d061155000245788b" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/23095743.jpg" style=" height: auto; width: auto;" title=" "></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-203a65fc911e549d061155000245788b"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/23095743.jpg" title=" "></a></p>
+<p><a href="#R-image-6df4e9a4ec733ece889a79dd3ed93f8f" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/23095743.jpg" style=" height: auto; width: auto;" title=" "></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6df4e9a4ec733ece889a79dd3ed93f8f"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/23095743.jpg" title=" "></a></p>
 <h3 id="compose">Compose</h3>
 <p><strong>Compose</strong> 模块内填入以下内容，修饰 <strong>Create_HTML_table</strong> 的格式：</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>&lt;style&gt;
@@ -242,8 +242,8 @@ table thead th:first-child {
 &lt;/style&gt;@{body(&#39;Create_HTML_table&#39;)}</code></pre></div>
 <h2 id="excel-表格操作">Excel 表格操作</h2>
 <h3 id="案例一插入-or-更新行">案例一：插入 or 更新行</h3>
-<p><a href="#R-image-e4fc6b539becfa48b6a143bfc405d888" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/23105215.jpg" style=" height: auto; width: auto;" title=" "></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e4fc6b539becfa48b6a143bfc405d888"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/23105215.jpg" title=" "></a></p>
+<p><a href="#R-image-17217f58445e7d3ab9bb93e09d3b6323" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/23105215.jpg" style=" height: auto; width: auto;" title=" "></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-17217f58445e7d3ab9bb93e09d3b6323"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/23105215.jpg" title=" "></a></p>
 <p>常用模块：</p>
 <ul>
 <li>List rows present in a table</li>
@@ -253,30 +253,30 @@ table thead th:first-child {
 <li>Update a row</li>
 </ul>
 <h3 id="案例二筛选">案例二：筛选</h3>
-<p><a href="#R-image-efbd8f557c2761914a26d358d4ad89a9" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/23153355.jpg" style=" height: auto; width: auto;" title=" "></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-efbd8f557c2761914a26d358d4ad89a9"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/23153355.jpg" title=" "></a></p>
+<p><a href="#R-image-506516175f71577c095a168403d2f09b" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/23153355.jpg" style=" height: auto; width: auto;" title=" "></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-506516175f71577c095a168403d2f09b"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/23153355.jpg" title=" "></a></p>
 <ul>
 <li>
 <p>Filter array</p>
 <ul>
 <li>可以按单列筛选符合条件的行
-<a href="#R-image-188daf85b9b2de7fcfa2a0e54c02c894" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/23150539.jpg" style=" height: auto; width: auto;" title=" "></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-188daf85b9b2de7fcfa2a0e54c02c894"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/23150539.jpg" title=" "></a></li>
+<a href="#R-image-5b7c448a1666160dfa59330238595056" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/23150539.jpg" style=" height: auto; width: auto;" title=" "></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5b7c448a1666160dfa59330238595056"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/23150539.jpg" title=" "></a></li>
 </ul>
 </li>
 <li>
 <p>Update a row</p>
 <ul>
 <li>更改行内容
-<a href="#R-image-9e60e4af10db8f1f58ed67b39af6280b" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/23142723.jpg" style=" height: auto; width: auto;" title=" "></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9e60e4af10db8f1f58ed67b39af6280b"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/23142723.jpg" title=" "></a></li>
+<a href="#R-image-60a8a16ceec9e4f0ba9c19c5d4058239" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/23142723.jpg" style=" height: auto; width: auto;" title=" "></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-60a8a16ceec9e4f0ba9c19c5d4058239"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/23142723.jpg" title=" "></a></li>
 </ul>
 </li>
 </ul>
 <h2 id="variable">variable</h2>
 <p>主要在 Condition 中使用 Variable。
-<a href="#R-image-459ee5355024d5c162c5a502e4ccdbef" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/23145906.jpg" style=" height: auto; width: auto;" title=" "></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-459ee5355024d5c162c5a502e4ccdbef"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/23145906.jpg" title=" "></a></p>
+<a href="#R-image-35b5f40e4efad37117c6fdbc246f50ec" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/23145906.jpg" style=" height: auto; width: auto;" title=" "></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-35b5f40e4efad37117c6fdbc246f50ec"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/23145906.jpg" title=" "></a></p>
 <h3 id="常用模块">常用模块：</h3>
 <ul>
 <li>Initialize variable</li>
@@ -286,14 +286,14 @@ table thead th:first-child {
 </ul>
 <h2 id="teams-通知">Teams 通知</h2>
 <p>收到特定发件人的邮件后，转发到 Teams 聊天组中。</p>
-<p><a href="#R-image-78aa2b21eb1c23ab808d90bfe3598739" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/26165556.jpg" style=" height: auto; width: auto;" title=" "></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-78aa2b21eb1c23ab808d90bfe3598739"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/26165556.jpg" title=" "></a></p>
+<p><a href="#R-image-f407e341b2472a13a63ea855fbce9acf" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/26165556.jpg" style=" height: auto; width: auto;" title=" "></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f407e341b2472a13a63ea855fbce9acf"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/26165556.jpg" title=" "></a></p>
 <h3 id="when-a-new-email-arrives-v3">When a new email arrives (V3)</h3>
-<p><a href="#R-image-52f66f87ae8e2d303cbab6a8d66595b3" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/27102709.jpg" style=" height: auto; width: auto;" title=" "></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-52f66f87ae8e2d303cbab6a8d66595b3"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/27102709.jpg" title=" "></a></p>
+<p><a href="#R-image-7ce2fb4cc39af0c44de0be1816bcac69" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/27102709.jpg" style=" height: auto; width: auto;" title=" "></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7ce2fb4cc39af0c44de0be1816bcac69"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/27102709.jpg" title=" "></a></p>
 <h3 id="post-adaptive-card-to-channel">Post adaptive card to channel</h3>
-<p><a href="#R-image-2717c3eb6f50089790288cff1c4017d4" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/26165633.jpg" style=" height: auto; width: auto;" title=" "></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2717c3eb6f50089790288cff1c4017d4"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/26165633.jpg" title=" "></a></p>
+<p><a href="#R-image-c34d45b3b2654cc05b6ff1e1ecfd37c9" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/26165633.jpg" style=" height: auto; width: auto;" title=" "></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c34d45b3b2654cc05b6ff1e1ecfd37c9"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/26165633.jpg" title=" "></a></p>
 <p>Adaptive Card:</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>{
     &#34;$schema&#34;: &#34;http://adaptivecards.io/schemas/adaptive-card.json&#34;,
@@ -338,7 +338,7 @@ table thead th:first-child {
       <div id="R-header-topbar" class="default-animation"></div>
       <div id="R-header-wrapper" class="default-animation">
         <div id="R-header" class="default-animation">
-          <a id="R-logo" class="R-default" href="../../WJnote/index.html">
+          <a id="R-logo" class="R-default" href="../../WJNote/index.html">
             <div class="logo-title"></div>
           </a>
         </div>
@@ -357,7 +357,7 @@ table thead th:first-child {
         </div>
         <div class="R-sidebarmenu R-shortcutmenu-homelinks">
           <ul class="space collapsible-menu">
-            <li class="" data-nav-id="/WJnote/index.html"><a class="padding" href="../../WJnote/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+            <li class="" data-nav-id="/WJNote/index.html"><a class="padding" href="../../WJNote/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
           </ul>
         </div>
         <div class="R-menu-divider default-animation">
@@ -374,13 +374,13 @@ table thead th:first-child {
       <div id="R-content-wrapper" class="highlightable">
         <div class="R-sidebarmenu R-shortcutmenu-main">
           <ul class="enlarge morespace collapsible-menu">
-            <li class="" data-nav-id="/WJnote/section1/index.html"><a class="padding" href="../../WJnote/section1/index.html">MKDocs</a><ul id="R-subsections-855beca36197552a12c88ce82d6c020c" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/WJnote/section2/index.html"><a class="padding" href="../../WJnote/section2/index.html">Python</a></li>
-            <li class="" data-nav-id="/WJnote/section3/index.html"><a class="padding" href="../../WJnote/section3/index.html">MKDocs</a></li>
-            <li class="parent " data-nav-id="/WJnote/section4/index.html"><a class="padding" href="../../WJnote/section4/index.html">MKDocs</a><ul id="R-subsections-405f9f61556e0ac0abf2002065963896" class="collapsible-menu">
-            <li class="active hidden " data-nav-id="/WJnote/section4/topic41/index.html"><a class="padding" href="../../WJnote/section4/topic41/index.html"></a></li></ul></li>
-            <li class="" data-nav-id="/WJnote/section5/index.html"><a class="padding" href="../../WJnote/section5/index.html">MKDocs</a></li>
-            <li class="" data-nav-id="/WJnote/posts/index.html"><a class="padding" href="../../WJnote/posts/index.html">Posts</a></li>
+            <li class="" data-nav-id="/WJNote/section1/index.html"><a class="padding" href="../../WJNote/section1/index.html">MKDocs</a><ul id="R-subsections-855beca36197552a12c88ce82d6c020c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/WJNote/section2/index.html"><a class="padding" href="../../WJNote/section2/index.html">Python</a></li>
+            <li class="" data-nav-id="/WJNote/section3/index.html"><a class="padding" href="../../WJNote/section3/index.html">MKDocs</a></li>
+            <li class="parent " data-nav-id="/WJNote/section4/index.html"><a class="padding" href="../../WJNote/section4/index.html">MKDocs</a><ul id="R-subsections-405f9f61556e0ac0abf2002065963896" class="collapsible-menu">
+            <li class="active hidden " data-nav-id="/WJNote/section4/topic41/index.html"><a class="padding" href="../../WJNote/section4/topic41/index.html"></a></li></ul></li>
+            <li class="" data-nav-id="/WJNote/section5/index.html"><a class="padding" href="../../WJNote/section5/index.html">MKDocs</a></li>
+            <li class="" data-nav-id="/WJNote/posts/index.html"><a class="padding" href="../../WJNote/posts/index.html">Posts</a></li>
           </ul>
         </div>
         <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
@@ -398,8 +398,8 @@ table thead th:first-child {
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="../../WJnote/js/clipboard/clipboard.min.js?1743773687" defer></script>
-    <script src="../../WJnote/js/perfect-scrollbar/perfect-scrollbar.min.js?1743773687" defer></script>
-    <script src="../../WJnote/js/theme.min.js?1743773687" defer></script>
+    <script src="../../WJNote/js/clipboard/clipboard.min.js?1743775153" defer></script>
+    <script src="../../WJNote/js/perfect-scrollbar/perfect-scrollbar.min.js?1743775153" defer></script>
+    <script src="../../WJNote/js/theme.min.js?1743775153" defer></script>
   </body>
 </html>
