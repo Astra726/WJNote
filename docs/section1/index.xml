@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MKDocs</title>
+    <link>https://astra726.github.io/WJnote/section1/index.html</link>
+    <description>子页面列表 {{ range .Pages }} {{ .Title }} {{ end }}</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://astra726.github.io/WJnote/section1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Terminal Commands</title>
+      <link>https://astra726.github.io/WJnote/section1/topic1/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://astra726.github.io/WJnote/section1/topic1/index.html</guid>
+      <description>Commands Hugo Install brew install hugo - macOS install. hugo version hugo server -D - 启动本地服务器。 hugo --gc - 垃圾回收。 生成静态文件 运行以下命令生成网站： bash 复制 hugo # 生成到 public/&#xA;或指定输出目录 hugo -d docs # 如果使用 docs/ 作为发布目录 3. 配置 GitHub Pages 使用 Hugo 输出 情况 1：使用 docs/ 目录（推荐） 将 Hugo 生成的静态文件放入 docs/ 目录：&#xA;bash 复制 hugo -d docs # 生成到 docs/ 在 GitHub 仓库设置中：&#xA;进入 Settings → Pages。&#xA;选择 Source: Deploy from a branch → Branch: main（或 master）。</description>
+    </item>
+    <item>
+      <title>Theme learning</title>
+      <link>https://astra726.github.io/WJnote/section1/topic2/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://astra726.github.io/WJnote/section1/topic2/index.html</guid>
+      <description>Built with by Relearn and Hugo. FontAwesome partial&#xA;Go Theme Shortcodes Go Fontawesome Download Magic FontAwesome ​ python 1 print(&#34;Hello World!&#34;) 这是一段 高亮文字。</description>
+    </item>
+    <item>
+      <title>Github</title>
+      <link>https://astra726.github.io/WJnote/section1/topic3/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://astra726.github.io/WJnote/section1/topic3/index.html</guid>
+      <description>Share and collaborate your project. Create a Repository Go to GitHub. Create a new repository for your project by clicking on the New in the Repositories. Name the repository and select whether it should be Public or Private (depending on whether you want others to see it).&#xA;Push Your Project to GitHub On your local machine where the MkDocs project exists:&#xA;# Initialize Git git init # Add your files to the Git staging area git add . # Commit your changes git commit -m &#34;Initial commit&#34; Switched to a new branch &#39;main&#39; git checkout -b main # Link the repository to your local directory git remote add origin https://github.com/your-username/your-repository.git # Push the changes to GitHub git push -u origin main Now, your project is stored on GitHub.</description>
+    </item>
+  </channel>
+</rss>
