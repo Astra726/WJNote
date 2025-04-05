@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PYTHON</title>
+    <link>https://astra726.github.io/WJNote/python/index.html</link>
+    <description>子页面列表 {{ range .Pages }} {{ .Title }} {{ end }}</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://astra726.github.io/WJNote/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Environment</title>
+      <link>https://astra726.github.io/WJNote/python/environment/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://astra726.github.io/WJNote/python/environment/index.html</guid>
+      <description>Mac 电脑装机，配置代码环境。&#xA;设置使 Mac 中的 Python 默认指向 Python 3 检查当前 Python 版本和地址 打开终端，运行： python --version python3 --version which python which python3 创建符号链接，将 python 命令链接到 python3。 运行以下命令： # 删除现有的 Python 符号链接： sudo rm /usr/local/bin/python #创建新的符号链接，将 python 链接到 Python 3 的路径： sudo ln -s /Library/Frameworks/Python.framework/Versions/3.13/bin/python3 /usr/local/bin/python 重新运行：python --version，设置成功应该显示 Python 3.x。 安装 pip 检查 pip 是否已经安装：&#xA;python -m ensurepip --upgrade 使用 get-pip.py 安装（如果尚未安装）：&#xA;下载 get-pip.py 脚本： curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py # 运行 get-pip.py 来安装 pip： python get-pip.py # 更新 pip： python -m pip install --upgrade pip vscode 配置解释器 按住 ctrl+shift+p （macOS: cmd+shift+p）输入文本查找并选择 Python:Select Inerpreter。 选择正确的 python 版本。</description>
+    </item>
+    <item>
+      <title>Common Libraries</title>
+      <link>https://astra726.github.io/WJNote/python/common/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://astra726.github.io/WJNote/python/common/index.html</guid>
+      <description>Pyautogui Screenshot 截取屏幕指定区域并保存为临时文件。&#xA;param region: 截取区域的坐标 (left, top, width, height)&#xA;return: 临时文件的路径&#xA;def capture_screen_region(region):&#xD;try:&#xD;# 截取屏幕指定区域&#xD;screenshot = pyautogui.screenshot(region=region)&#xD;# 创建临时文件&#xD;with tempfile.NamedTemporaryFile(suffix=&#34;.png&#34;, delete=False) as temp_file:&#xD;temp_path = temp_file.name&#xD;screenshot.save(temp_path)&#xD;return temp_path, screenshot # 返回临时文件路径和截图对象&#xD;except Exception as e:&#xD;print(f&#34;截图失败：{e}&#34;)&#xD;return None, None&#xD;screen_region = (x, y, w, h) # 定义屏幕截图的区域 (left, top, width, height)&#xD;img_path, screenshot = capture_screen_region(screen_region) # 截取屏幕指定区域 PaddleOCR 初始化 PaddleOCR（全局变量，避免重复初始化） ocr = PaddleOCR(&#xD;use_angle_cls=False, # 不使用方向分类模型&#xD;lang=&#34;ch&#34;, # 使用中文模型&#xD;det_model_dir=&#34;ch_PP-OCRv2_det&#34;, # 指定检测模型路径&#xD;rec_model_dir=&#34;ch_PP-OCRv2_rec&#34;, # 指定识别模型路径&#xD;show_log=False # 关闭日志输出&#xD;)&#xD;print(&#39;ocr 完成初始化&#39;) 对指定图片进行 OCR 识别，返回识别出的文本 img_path: 图片路径</description>
+    </item>
+    <item>
+      <title>Data Cleaning</title>
+      <link>https://astra726.github.io/WJNote/python/topic33/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://astra726.github.io/WJNote/python/topic33/index.html</guid>
+      <description>日期格式清洗函数 确保日期是标准的 YYYY-MM-DD 格式。&#xA;def clean_date(date_str): # 将日期分割成日期和时间部分 date_part, time_part = date_str.split() # 检查日期分隔符并替换为标准格式的 &#39;-&#39; date_part = date_part.replace(&#39;/&#39;, &#39;-&#39;) # 将日期部分转为标准格式 YYYY-MM-DD year, month, day = date_part.split(&#39;-&#39;) month = month.zfill(2) # 补齐月的前导零 day = day.zfill(2) # 补齐日的前导零 # 拼接回标准日期格式 formatted_date = f&#34;{year}-{month}-{day} {time_part}&#34; return formatted_date</description>
+    </item>
+  </channel>
+</rss>

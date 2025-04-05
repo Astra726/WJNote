@@ -1,62 +1,50 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/WJNote/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=WJNote/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.145.0">
     <meta name="generator" content="Relearn 7.6.0+b932d301d7838f3c1a50e318e216b55ce5cc9148">
-    <meta name="description" content="Commands Hugo Install brew install hugo - macOS install. hugo version hugo server -D - 启动本地服务器。 hugo --gc - 垃圾回收。 生成静态文件 运行以下命令生成网站： bash 复制 hugo # 生成到 public/
-或指定输出目录 hugo -d docs # 如果使用 docs/ 作为发布目录 3. 配置 GitHub Pages 使用 Hugo 输出 情况 1：使用 docs/ 目录（推荐） 将 Hugo 生成的静态文件放入 docs/ 目录：
-bash 复制 hugo -d docs # 生成到 docs/ 在 GitHub 仓库设置中：
-进入 Settings → Pages。
-选择 Source: Deploy from a branch → Branch: main（或 master）。">
+    <meta name="description" content="Hugo 常用指令 brew install hugo - macOS install. hugo version hugo server - 启动本地服务器。 hugo --gc - 垃圾回收。 生成静态文件 hugo - 默认生成到 public/。 hugo -d docs - 生成静态文件，使用 docs/ 作为发布目录。 在配置文件 hugo.toml 中添加以下语句，可更改发布目录默认为 docs/（ 放到文件顶部）。
+publishDir = &#34;docs&#34; # 静态文件输出目录 Terminal mkdir tech_notes - 创建文件夹 cd tech_notes - 进入文件夹 touch docs/css/custom.css - 创建文件 rm -rf public/ - 删除文件夹 MkDocs mkdocs new [dir-name] - Create a new project. mkdocs serve - Start the live-reloading docs server. mkdocs build - Build the documentation site. mkdocs -h - Print help message and exit.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Terminal Commands">
-    <meta name="twitter:description" content="Commands Hugo Install brew install hugo - macOS install. hugo version hugo server -D - 启动本地服务器。 hugo --gc - 垃圾回收。 生成静态文件 运行以下命令生成网站： bash 复制 hugo # 生成到 public/
-或指定输出目录 hugo -d docs # 如果使用 docs/ 作为发布目录 3. 配置 GitHub Pages 使用 Hugo 输出 情况 1：使用 docs/ 目录（推荐） 将 Hugo 生成的静态文件放入 docs/ 目录：
-bash 复制 hugo -d docs # 生成到 docs/ 在 GitHub 仓库设置中：
-进入 Settings → Pages。
-选择 Source: Deploy from a branch → Branch: main（或 master）。">
-    <meta property="og:url" content="https://astra726.github.io/WJNote/section1/topic1/index.html">
-    <meta property="og:title" content="Terminal Commands">
-    <meta property="og:description" content="Commands Hugo Install brew install hugo - macOS install. hugo version hugo server -D - 启动本地服务器。 hugo --gc - 垃圾回收。 生成静态文件 运行以下命令生成网站： bash 复制 hugo # 生成到 public/
-或指定输出目录 hugo -d docs # 如果使用 docs/ 作为发布目录 3. 配置 GitHub Pages 使用 Hugo 输出 情况 1：使用 docs/ 目录（推荐） 将 Hugo 生成的静态文件放入 docs/ 目录：
-bash 复制 hugo -d docs # 生成到 docs/ 在 GitHub 仓库设置中：
-进入 Settings → Pages。
-选择 Source: Deploy from a branch → Branch: main（或 master）。">
+    <meta name="twitter:title" content="Quick lookup">
+    <meta name="twitter:description" content="Hugo 常用指令 brew install hugo - macOS install. hugo version hugo server - 启动本地服务器。 hugo --gc - 垃圾回收。 生成静态文件 hugo - 默认生成到 public/。 hugo -d docs - 生成静态文件，使用 docs/ 作为发布目录。 在配置文件 hugo.toml 中添加以下语句，可更改发布目录默认为 docs/（ 放到文件顶部）。
+publishDir = &#34;docs&#34; # 静态文件输出目录 Terminal mkdir tech_notes - 创建文件夹 cd tech_notes - 进入文件夹 touch docs/css/custom.css - 创建文件 rm -rf public/ - 删除文件夹 MkDocs mkdocs new [dir-name] - Create a new project. mkdocs serve - Start the live-reloading docs server. mkdocs build - Build the documentation site. mkdocs -h - Print help message and exit.">
+    <meta property="og:url" content="http://localhost:1313/WJNote/section1/topic1/index.html">
+    <meta property="og:title" content="Quick lookup">
+    <meta property="og:description" content="Hugo 常用指令 brew install hugo - macOS install. hugo version hugo server - 启动本地服务器。 hugo --gc - 垃圾回收。 生成静态文件 hugo - 默认生成到 public/。 hugo -d docs - 生成静态文件，使用 docs/ 作为发布目录。 在配置文件 hugo.toml 中添加以下语句，可更改发布目录默认为 docs/（ 放到文件顶部）。
+publishDir = &#34;docs&#34; # 静态文件输出目录 Terminal mkdir tech_notes - 创建文件夹 cd tech_notes - 进入文件夹 touch docs/css/custom.css - 创建文件 rm -rf public/ - 删除文件夹 MkDocs mkdocs new [dir-name] - Create a new project. mkdocs serve - Start the live-reloading docs server. mkdocs build - Build the documentation site. mkdocs -h - Print help message and exit.">
     <meta property="og:locale" content="en">
     <meta property="og:type" content="article">
-    <meta property="article:section" content="MKDocs">
-    <meta itemprop="name" content="Terminal Commands">
-    <meta itemprop="description" content="Commands Hugo Install brew install hugo - macOS install. hugo version hugo server -D - 启动本地服务器。 hugo --gc - 垃圾回收。 生成静态文件 运行以下命令生成网站： bash 复制 hugo # 生成到 public/
-或指定输出目录 hugo -d docs # 如果使用 docs/ 作为发布目录 3. 配置 GitHub Pages 使用 Hugo 输出 情况 1：使用 docs/ 目录（推荐） 将 Hugo 生成的静态文件放入 docs/ 目录：
-bash 复制 hugo -d docs # 生成到 docs/ 在 GitHub 仓库设置中：
-进入 Settings → Pages。
-选择 Source: Deploy from a branch → Branch: main（或 master）。">
-    <meta itemprop="wordCount" content="129">
-    <title>Terminal Commands</title>
-    <link href="/WJNote/fonts/fontawesome/css/fontawesome-all.min.css?1743775483" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/WJNote/fonts/fontawesome/css/fontawesome-all.min.css?1743775483" rel="stylesheet"></noscript>
-    <link href="/WJNote/css/perfect-scrollbar/perfect-scrollbar.min.css?1743775483" rel="stylesheet">
-    <link href="/WJNote/css/theme.min.css?1743775483" rel="stylesheet">
-    <link href="/WJNote/css/format-html.min.css?1743775483" rel="stylesheet" id="R-format-style">
-    <link href="/WJNote/css/auto-complete/auto-complete.min.css?1743775483" rel="stylesheet">
-    <script src="/WJNote/js/auto-complete/auto-complete.min.js?1743775483" defer></script>
-    <script src="/WJNote/js/lunr/lunr.min.js?1743775483" defer></script>
-    <script src="/WJNote/js/lunr/lunr.stemmer.support.min.js?1743775483" defer></script>
-    <script src="/WJNote/js/lunr/lunr.multi.min.js?1743775483" defer></script>
-    <script src="/WJNote/js/lunr/lunr.en.min.js?1743775483" defer></script>
-    <script src="/WJNote/js/search.min.js?1743775483" defer></script>
+    <meta property="article:section" content="Hugo">
+    <meta itemprop="name" content="Quick lookup">
+    <meta itemprop="description" content="Hugo 常用指令 brew install hugo - macOS install. hugo version hugo server - 启动本地服务器。 hugo --gc - 垃圾回收。 生成静态文件 hugo - 默认生成到 public/。 hugo -d docs - 生成静态文件，使用 docs/ 作为发布目录。 在配置文件 hugo.toml 中添加以下语句，可更改发布目录默认为 docs/（ 放到文件顶部）。
+publishDir = &#34;docs&#34; # 静态文件输出目录 Terminal mkdir tech_notes - 创建文件夹 cd tech_notes - 进入文件夹 touch docs/css/custom.css - 创建文件 rm -rf public/ - 删除文件夹 MkDocs mkdocs new [dir-name] - Create a new project. mkdocs serve - Start the live-reloading docs server. mkdocs build - Build the documentation site. mkdocs -h - Print help message and exit.">
+    <meta itemprop="wordCount" content="90">
+    <title>Quick lookup</title>
+    <link href="/WJNote/fonts/fontawesome/css/fontawesome-all.min.css?1743849673" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/WJNote/fonts/fontawesome/css/fontawesome-all.min.css?1743849673" rel="stylesheet"></noscript>
+    <link href="/WJNote/css/perfect-scrollbar/perfect-scrollbar.min.css?1743849673" rel="stylesheet">
+    <link href="/WJNote/css/theme.css?1743849673" rel="stylesheet">
+    <link href="/WJNote/css/format-html.css?1743849673" rel="stylesheet" id="R-format-style">
+    <link href="/WJNote/css/auto-complete/auto-complete.min.css?1743849673" rel="stylesheet">
+    <script src="/WJNote/js/auto-complete/auto-complete.min.js?1743849673" defer></script>
+    <script src="/WJNote/js/lunr/lunr.min.js?1743849673" defer></script>
+    <script src="/WJNote/js/lunr/lunr.stemmer.support.min.js?1743849673" defer></script>
+    <script src="/WJNote/js/lunr/lunr.multi.min.js?1743849673" defer></script>
+    <script src="/WJNote/js/lunr/lunr.en.min.js?1743849673" defer></script>
+    <script src="/WJNote/js/search.js?1743849673" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/section1\/topic1\/index.html';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/astra726.github.io\/WJNote';
+      window.relearn.absBaseUri='http:\/\/localhost:1313\/WJNote';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/WJNote/searchindex.en.js?1743775483";
+      window.relearn.index_js_url="/WJNote/searchindex.en.js?1743849673";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -66,7 +54,7 @@ bash 复制 hugo -d docs # 生成到 docs/ 在 GitHub 仓库设置中：
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // variant stuff
-      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.themevariants = [ 'wj' ];
       window.relearn.customvariantname = "my-custom-variant";
       window.relearn.changeVariant = function(variant) {
         var oldVariant = document.documentElement.dataset.rThemeVariant;
@@ -119,14 +107,12 @@ bash 复制 hugo -d docs # 生成到 docs/ 在 GitHub 仓库设置中：
   <ul>
     <li><a href="#hugo">Hugo</a>
       <ul>
-        <li><a href="#install">Install</a></li>
+        <li><a href="#常用指令">常用指令</a></li>
+        <li><a href="#生成静态文件">生成静态文件</a></li>
       </ul>
     </li>
-  </ul>
-
-  <ul>
-    <li><a href="#terminal-commands">Terminal Commands</a></li>
-    <li><a href="#mkdocs-commands">MkDocs Commands</a></li>
+    <li><a href="#terminal">Terminal</a></li>
+    <li><a href="#mkdocs">MkDocs</a></li>
   </ul>
 </nav>
                 </div>
@@ -134,13 +120,13 @@ bash 复制 hugo -d docs # 生成到 docs/ 在 GitHub 仓库设置中：
             </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/WJNote/section1/index.html"><span itemprop="name">MKDocs</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Terminal Commands</span><meta itemprop="position" content="2"></li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/WJNote/section1/index.html"><span itemprop="name">Hugo</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Quick lookup</span><meta itemprop="position" content="2"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/WJNote/section1/index.html" title="MKDocs (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/WJNote/section1/theme/index.html" title="Theme learning (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/WJNote/section1/topic2/index.html" title="Theme learning (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/WJNote/section1/github/index.html" title="Github (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -160,44 +146,31 @@ bash 复制 hugo -d docs # 生成到 docs/ 在 GitHub 仓库设置中：
   <header class="headline">
   </header>
 
-<h1 id="terminal-commands">Terminal Commands</h1>
+<h1 id="quick-lookup">Quick lookup</h1>
 
-<h1 id="commands">Commands</h1>
 <h2 id="hugo">Hugo</h2>
-<h3 id="install">Install</h3>
+<h3 id="常用指令">常用指令</h3>
 <ul>
 <li><code>brew install hugo</code> - macOS install.</li>
 <li><code>hugo version</code></li>
-<li><code>hugo server -D</code> - 启动本地服务器。</li>
+<li><code>hugo server</code> - 启动本地服务器。</li>
 <li><code>hugo --gc</code> - 垃圾回收。</li>
 </ul>
-<ol start="2">
-<li>生成静态文件
-运行以下命令生成网站：</li>
-</ol>
-<p>bash
-复制
-hugo  # 生成到 public/</p>
-<h1 id="或指定输出目录">或指定输出目录</h1>
-<p>hugo -d docs  # 如果使用 docs/ 作为发布目录
-3. 配置 GitHub Pages 使用 Hugo 输出
-情况 1：使用 docs/ 目录（推荐）
-将 Hugo 生成的静态文件放入 docs/ 目录：</p>
-<p>bash
-复制
-hugo -d docs  # 生成到 docs/
-在 GitHub 仓库设置中：</p>
-<p>进入 Settings → Pages。</p>
-<p>选择 Source: Deploy from a branch → Branch: main（或 master）。</p>
-<p>选择 Folder: /docs。</p>
-<p>点击 Save。</p>
-<h2 id="terminal-commands">Terminal Commands</h2>
+<h3 id="生成静态文件">生成静态文件</h3>
+<ul>
+<li><code>hugo</code> - 默认生成到 public/。</li>
+<li><code>hugo -d docs</code> - 生成静态文件，使用 docs/ 作为发布目录。</li>
+</ul>
+<p>在配置文件 hugo.toml 中添加以下语句，可更改发布目录默认为 docs/（<i class="fa-fw fas fa-exclamation-triangle cstyle warning"></i> 放到文件顶部）。</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>publishDir = &#34;docs&#34;  # 静态文件输出目录</code></pre></div>
+<h2 id="terminal">Terminal</h2>
 <ul>
 <li><code>mkdir tech_notes</code> - 创建文件夹</li>
 <li><code>cd tech_notes</code> - 进入文件夹</li>
 <li><code>touch docs/css/custom.css</code> - 创建文件</li>
+<li><code>rm -rf public/</code> - 删除文件夹</li>
 </ul>
-<h2 id="mkdocs-commands">MkDocs Commands</h2>
+<h2 id="mkdocs">MkDocs</h2>
 <ul>
 <li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
 <li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
@@ -251,13 +224,13 @@ hugo -d docs  # 生成到 docs/
       <div id="R-content-wrapper" class="highlightable">
         <div class="R-sidebarmenu R-shortcutmenu-main">
           <ul class="enlarge morespace collapsible-menu">
-            <li class="parent " data-nav-id="/WJNote/section1/index.html"><a class="padding" href="/WJNote/section1/index.html">MKDocs</a><ul id="R-subsections-855beca36197552a12c88ce82d6c020c" class="collapsible-menu">
-            <li class="active " data-nav-id="/WJNote/section1/topic1/index.html"><a class="padding" href="/WJNote/section1/topic1/index.html">Terminal Commands</a></li>
-            <li class="" data-nav-id="/WJNote/section1/topic2/index.html"><a class="padding" href="/WJNote/section1/topic2/index.html">Theme learning</a></li>
-            <li class="" data-nav-id="/WJNote/section1/topic3/index.html"><a class="padding" href="/WJNote/section1/topic3/index.html">Github</a></li></ul></li>
-            <li class="" data-nav-id="/WJNote/section2/index.html"><a class="padding" href="/WJNote/section2/index.html">Python</a></li>
-            <li class="" data-nav-id="/WJNote/section3/index.html"><a class="padding" href="/WJNote/section3/index.html">MKDocs</a></li>
-            <li class="" data-nav-id="/WJNote/section4/index.html"><a class="padding" href="/WJNote/section4/index.html">MKDocs</a></li>
+            <li class="parent " data-nav-id="/WJNote/section1/index.html"><a class="padding" href="/WJNote/section1/index.html">Hugo</a><ul id="R-subsections-855beca36197552a12c88ce82d6c020c" class="collapsible-menu">
+            <li class="" data-nav-id="/WJNote/section1/theme/index.html"><a class="padding" href="/WJNote/section1/theme/index.html">Theme learning</a></li>
+            <li class="active " data-nav-id="/WJNote/section1/topic1/index.html"><a class="padding" href="/WJNote/section1/topic1/index.html">Quick lookup</a></li>
+            <li class="" data-nav-id="/WJNote/section1/github/index.html"><a class="padding" href="/WJNote/section1/github/index.html">Github</a></li></ul></li>
+            <li class="" data-nav-id="/WJNote/python/index.html"><a class="padding" href="/WJNote/python/index.html">PYTHON</a></li>
+            <li class="" data-nav-id="/WJNote/section3/index.html"><a class="padding" href="/WJNote/section3/index.html">SQL</a></li>
+            <li class="" data-nav-id="/WJNote/section4/index.html"><a class="padding" href="/WJNote/section4/index.html">Power Automate</a></li>
             <li class="" data-nav-id="/WJNote/section5/index.html"><a class="padding" href="/WJNote/section5/index.html">MKDocs</a></li>
             <li class="" data-nav-id="/WJNote/posts/index.html"><a class="padding" href="/WJNote/posts/index.html">Posts</a></li>
           </ul>
@@ -277,8 +250,8 @@ hugo -d docs  # 生成到 docs/
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/WJNote/js/clipboard/clipboard.min.js?1743775483" defer></script>
-    <script src="/WJNote/js/perfect-scrollbar/perfect-scrollbar.min.js?1743775483" defer></script>
-    <script src="/WJNote/js/theme.min.js?1743775483" defer></script>
+    <script src="/WJNote/js/clipboard/clipboard.min.js?1743849673" defer></script>
+    <script src="/WJNote/js/perfect-scrollbar/perfect-scrollbar.min.js?1743849673" defer></script>
+    <script src="/WJNote/js/theme.js?1743849673" defer></script>
   </body>
 </html>

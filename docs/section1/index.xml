@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>MKDocs</title>
-    <link>https://astra726.github.io/WJNote/section1/index.html</link>
+    <title>Hugo</title>
+    <link>http://localhost:1313/WJNote/section1/index.html</link>
     <description>子页面列表 {{ range .Pages }} {{ .Title }} {{ end }}</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="https://astra726.github.io/WJNote/section1/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Terminal Commands</title>
-      <link>https://astra726.github.io/WJNote/section1/topic1/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://astra726.github.io/WJNote/section1/topic1/index.html</guid>
-      <description>Commands Hugo Install brew install hugo - macOS install. hugo version hugo server -D - 启动本地服务器。 hugo --gc - 垃圾回收。 生成静态文件 运行以下命令生成网站： bash 复制 hugo # 生成到 public/&#xA;或指定输出目录 hugo -d docs # 如果使用 docs/ 作为发布目录 3. 配置 GitHub Pages 使用 Hugo 输出 情况 1：使用 docs/ 目录（推荐） 将 Hugo 生成的静态文件放入 docs/ 目录：&#xA;bash 复制 hugo -d docs # 生成到 docs/ 在 GitHub 仓库设置中：&#xA;进入 Settings → Pages。&#xA;选择 Source: Deploy from a branch → Branch: main（或 master）。</description>
-    </item>
+    <atom:link href="http://localhost:1313/WJNote/section1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Theme learning</title>
-      <link>https://astra726.github.io/WJNote/section1/topic2/index.html</link>
+      <link>http://localhost:1313/WJNote/section1/theme/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://astra726.github.io/WJNote/section1/topic2/index.html</guid>
+      <guid>http://localhost:1313/WJNote/section1/theme/index.html</guid>
       <description>Built with by Relearn and Hugo. FontAwesome partial&#xA;Go Theme Shortcodes Go Fontawesome Download Magic FontAwesome ​ python 1 print(&#34;Hello World!&#34;) 这是一段 高亮文字。</description>
     </item>
     <item>
-      <title>Github</title>
-      <link>https://astra726.github.io/WJNote/section1/topic3/index.html</link>
+      <title>Quick lookup</title>
+      <link>http://localhost:1313/WJNote/section1/topic1/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://astra726.github.io/WJNote/section1/topic3/index.html</guid>
-      <description>Share and collaborate your project. Create a Repository Go to GitHub. Create a new repository for your project by clicking on the New in the Repositories. Name the repository and select whether it should be Public or Private (depending on whether you want others to see it).&#xA;Push Your Project to GitHub On your local machine where the MkDocs project exists:&#xA;# Initialize Git git init # Add your files to the Git staging area git add . # Commit your changes git commit -m &#34;Initial commit&#34; Switched to a new branch &#39;main&#39; git checkout -b main # Link the repository to your local directory git remote add origin https://github.com/your-username/your-repository.git # Push the changes to GitHub git push -u origin main Now, your project is stored on GitHub.</description>
+      <guid>http://localhost:1313/WJNote/section1/topic1/index.html</guid>
+      <description>Hugo 常用指令 brew install hugo - macOS install. hugo version hugo server - 启动本地服务器。 hugo --gc - 垃圾回收。 生成静态文件 hugo - 默认生成到 public/。 hugo -d docs - 生成静态文件，使用 docs/ 作为发布目录。 在配置文件 hugo.toml 中添加以下语句，可更改发布目录默认为 docs/（ 放到文件顶部）。&#xA;publishDir = &#34;docs&#34; # 静态文件输出目录 Terminal mkdir tech_notes - 创建文件夹 cd tech_notes - 进入文件夹 touch docs/css/custom.css - 创建文件 rm -rf public/ - 删除文件夹 MkDocs mkdocs new [dir-name] - Create a new project. mkdocs serve - Start the live-reloading docs server. mkdocs build - Build the documentation site. mkdocs -h - Print help message and exit.</description>
+    </item>
+    <item>
+      <title>Github</title>
+      <link>http://localhost:1313/WJNote/section1/github/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/WJNote/section1/github/index.html</guid>
+      <description>Share and collaborate your project Create a Repository Go to GitHub. Create a new repository for your project by clicking on the New in the Repositories. Name the repository and select whether it should be Public or Private. Check the box for Add a README file. Configure Git Account Check Currently Active Git Account View the account used by the current project (priority: project &gt; global).&#xA;git config --show-origin user.name git config --show-origin user.email View global configuration.</description>
     </item>
   </channel>
 </rss>

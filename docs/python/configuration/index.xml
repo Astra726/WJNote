@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Environment Configuration</title>
+    <link>http://localhost:1313/WJNote/python/configuration/index.html</link>
+    <description>Mac 电脑装机，配置代码环境。&#xA;设置使 Mac 中的 Python 默认指向 Python 3 检查当前 Python 版本和地址。 打开终端，运行：&#xA;python --version python3 --version which python which python3 创建符号链接，将 python 命令链接到 python3。 运行以下命令：&#xA;# 删除现有的 Python 符号链接： sudo rm /usr/local/bin/python #创建新的符号链接，将 python 链接到 Python 3 的路径： sudo ln -s /Library/Frameworks/Python.framework/Versions/3.13/bin/python3 /usr/local/bin/python 重新运行：python --version，设置成功应该显示 Python 3.x。&#xA;安装 pip 检查 pip 是否已经安装：&#xA;python -m ensurepip --upgrade 使用 get-pip.py 安装（如果尚未安装）：&#xA;下载 get-pip.py 脚本： curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py # 运行 get-pip.py 来安装 pip： python get-pip.py # 更新 pip： python -m pip install --upgrade pip vscode 配置解释器 按住 ctrl+shift+p （macOS: cmd+shift+p）输入文本查找并选择 Python:Select Inerpreter。 选择正确的 python 版本。</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/WJNote/python/configuration/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

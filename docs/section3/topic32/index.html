@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/WJNote/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=WJNote/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.145.0">
@@ -14,39 +14,39 @@ ROWID MEASURE_NAME MEASURE_GROUP DESCRIPTION ACTUAL 1 Test1 Group1 Desc1 10 2 Te
     <meta name="twitter:description" content="Table operation # Delete table DROP TABLE IF EXISTS TableName # Change table name ALTER TABLE TableName_Old RENAME TO TableName_New # 获取总行数 SELECT COUNT(*) FROM TableName total_rows = cursor.fetchone()[0] Deduplication GROUP BY 中要包括所有需要保持唯一的列。
 cursor.execute(&#34;&#34;&#34; DELETE FROM TableName WHERE ROWID NOT IN ( SELECT MIN(ROWID) FROM TableName GROUP BY ColumnName1, ColumnName2) &#34;&#34;&#34;) 示例
 ROWID MEASURE_NAME MEASURE_GROUP DESCRIPTION ACTUAL 1 Test1 Group1 Desc1 10 2 Test1 Group1 Desc2 15 3 Test2 Group2 Desc3 20 如果 GROUP BY 是 MEASURE_NAME, MEASURE_GROUP， ROWID 1 和 ROWID 2 会被视为同一组，因为 MEASURE_NAME 和 MEASURE_GROUP 相同。">
-    <meta property="og:url" content="https://astra726.github.io/WJNote/section3/topic32/index.html">
+    <meta property="og:url" content="http://localhost:1313/WJNote/section3/topic32/index.html">
     <meta property="og:description" content="Table operation # Delete table DROP TABLE IF EXISTS TableName # Change table name ALTER TABLE TableName_Old RENAME TO TableName_New # 获取总行数 SELECT COUNT(*) FROM TableName total_rows = cursor.fetchone()[0] Deduplication GROUP BY 中要包括所有需要保持唯一的列。
 cursor.execute(&#34;&#34;&#34; DELETE FROM TableName WHERE ROWID NOT IN ( SELECT MIN(ROWID) FROM TableName GROUP BY ColumnName1, ColumnName2) &#34;&#34;&#34;) 示例
 ROWID MEASURE_NAME MEASURE_GROUP DESCRIPTION ACTUAL 1 Test1 Group1 Desc1 10 2 Test1 Group1 Desc2 15 3 Test2 Group2 Desc3 20 如果 GROUP BY 是 MEASURE_NAME, MEASURE_GROUP， ROWID 1 和 ROWID 2 会被视为同一组，因为 MEASURE_NAME 和 MEASURE_GROUP 相同。">
     <meta property="og:locale" content="en">
     <meta property="og:type" content="article">
-    <meta property="article:section" content="MKDocs">
+    <meta property="article:section" content="SQL">
     <meta itemprop="description" content="Table operation # Delete table DROP TABLE IF EXISTS TableName # Change table name ALTER TABLE TableName_Old RENAME TO TableName_New # 获取总行数 SELECT COUNT(*) FROM TableName total_rows = cursor.fetchone()[0] Deduplication GROUP BY 中要包括所有需要保持唯一的列。
 cursor.execute(&#34;&#34;&#34; DELETE FROM TableName WHERE ROWID NOT IN ( SELECT MIN(ROWID) FROM TableName GROUP BY ColumnName1, ColumnName2) &#34;&#34;&#34;) 示例
 ROWID MEASURE_NAME MEASURE_GROUP DESCRIPTION ACTUAL 1 Test1 Group1 Desc1 10 2 Test1 Group1 Desc2 15 3 Test2 Group2 Desc3 20 如果 GROUP BY 是 MEASURE_NAME, MEASURE_GROUP， ROWID 1 和 ROWID 2 会被视为同一组，因为 MEASURE_NAME 和 MEASURE_GROUP 相同。">
     <meta itemprop="wordCount" content="239">
     <title></title>
-    <link href="/WJNote/fonts/fontawesome/css/fontawesome-all.min.css?1743775483" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/WJNote/fonts/fontawesome/css/fontawesome-all.min.css?1743775483" rel="stylesheet"></noscript>
-    <link href="/WJNote/css/perfect-scrollbar/perfect-scrollbar.min.css?1743775483" rel="stylesheet">
-    <link href="/WJNote/css/theme.min.css?1743775483" rel="stylesheet">
-    <link href="/WJNote/css/format-html.min.css?1743775483" rel="stylesheet" id="R-format-style">
-    <link href="/WJNote/css/auto-complete/auto-complete.min.css?1743775483" rel="stylesheet">
-    <script src="/WJNote/js/auto-complete/auto-complete.min.js?1743775483" defer></script>
-    <script src="/WJNote/js/lunr/lunr.min.js?1743775483" defer></script>
-    <script src="/WJNote/js/lunr/lunr.stemmer.support.min.js?1743775483" defer></script>
-    <script src="/WJNote/js/lunr/lunr.multi.min.js?1743775483" defer></script>
-    <script src="/WJNote/js/lunr/lunr.en.min.js?1743775483" defer></script>
-    <script src="/WJNote/js/search.min.js?1743775483" defer></script>
+    <link href="/WJNote/fonts/fontawesome/css/fontawesome-all.min.css?1743849597" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/WJNote/fonts/fontawesome/css/fontawesome-all.min.css?1743849597" rel="stylesheet"></noscript>
+    <link href="/WJNote/css/perfect-scrollbar/perfect-scrollbar.min.css?1743849597" rel="stylesheet">
+    <link href="/WJNote/css/theme.css?1743849597" rel="stylesheet">
+    <link href="/WJNote/css/format-html.css?1743849597" rel="stylesheet" id="R-format-style">
+    <link href="/WJNote/css/auto-complete/auto-complete.min.css?1743849597" rel="stylesheet">
+    <script src="/WJNote/js/auto-complete/auto-complete.min.js?1743849597" defer></script>
+    <script src="/WJNote/js/lunr/lunr.min.js?1743849597" defer></script>
+    <script src="/WJNote/js/lunr/lunr.stemmer.support.min.js?1743849597" defer></script>
+    <script src="/WJNote/js/lunr/lunr.multi.min.js?1743849597" defer></script>
+    <script src="/WJNote/js/lunr/lunr.en.min.js?1743849597" defer></script>
+    <script src="/WJNote/js/search.js?1743849597" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/section3\/topic32\/index.html';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/astra726.github.io\/WJNote';
+      window.relearn.absBaseUri='http:\/\/localhost:1313\/WJNote';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/WJNote/searchindex.en.js?1743775483";
+      window.relearn.index_js_url="/WJNote/searchindex.en.js?1743849597";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -56,7 +56,7 @@ ROWID MEASURE_NAME MEASURE_GROUP DESCRIPTION ACTUAL 1 Test1 Group1 Desc1 10 2 Te
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // variant stuff
-      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.themevariants = [ 'wj' ];
       window.relearn.customvariantname = "my-custom-variant";
       window.relearn.changeVariant = function(variant) {
         var oldVariant = document.documentElement.dataset.rThemeVariant;
@@ -131,10 +131,10 @@ ROWID MEASURE_NAME MEASURE_GROUP DESCRIPTION ACTUAL 1 Test1 Group1 Desc1 10 2 Te
             </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/WJNote/section3/index.html"><span itemprop="name">MKDocs</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/WJNote/section3/index.html"><span itemprop="name">SQL</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/WJNote/section3/index.html" title="MKDocs (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/WJNote/section3/index.html" title="SQL (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/WJNote/section4/index.html" title="MKDocs (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
@@ -306,9 +306,9 @@ for row in rows:
       <div id="R-content-wrapper" class="highlightable">
         <div class="R-sidebarmenu R-shortcutmenu-main">
           <ul class="enlarge morespace collapsible-menu">
-            <li class="" data-nav-id="/WJNote/section1/index.html"><a class="padding" href="/WJNote/section1/index.html">MKDocs</a><ul id="R-subsections-855beca36197552a12c88ce82d6c020c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/WJNote/section1/index.html"><a class="padding" href="/WJNote/section1/index.html">Hugo</a><ul id="R-subsections-855beca36197552a12c88ce82d6c020c" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/WJNote/section2/index.html"><a class="padding" href="/WJNote/section2/index.html">Python</a></li>
-            <li class="parent " data-nav-id="/WJNote/section3/index.html"><a class="padding" href="/WJNote/section3/index.html">MKDocs</a><ul id="R-subsections-19f6de2fac5f9a62a55b2f740f2fa805" class="collapsible-menu">
+            <li class="parent " data-nav-id="/WJNote/section3/index.html"><a class="padding" href="/WJNote/section3/index.html">SQL</a><ul id="R-subsections-19f6de2fac5f9a62a55b2f740f2fa805" class="collapsible-menu">
             <li class="active hidden " data-nav-id="/WJNote/section3/topic32/index.html"><a class="padding" href="/WJNote/section3/topic32/index.html"></a></li></ul></li>
             <li class="" data-nav-id="/WJNote/section4/index.html"><a class="padding" href="/WJNote/section4/index.html">MKDocs</a></li>
             <li class="" data-nav-id="/WJNote/section5/index.html"><a class="padding" href="/WJNote/section5/index.html">MKDocs</a></li>
@@ -330,8 +330,8 @@ for row in rows:
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/WJNote/js/clipboard/clipboard.min.js?1743775483" defer></script>
-    <script src="/WJNote/js/perfect-scrollbar/perfect-scrollbar.min.js?1743775483" defer></script>
-    <script src="/WJNote/js/theme.min.js?1743775483" defer></script>
+    <script src="/WJNote/js/clipboard/clipboard.min.js?1743849597" defer></script>
+    <script src="/WJNote/js/perfect-scrollbar/perfect-scrollbar.min.js?1743849597" defer></script>
+    <script src="/WJNote/js/theme.js?1743849597" defer></script>
   </body>
 </html>

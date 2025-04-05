@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/WJNote/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=WJNote/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 7.6.0+b932d301d7838f3c1a50e318e216b55ce5cc9148">
+    <meta name="description" content="常用模块结果引入 Run_a_query_against_a_dataset 取决于 Query text 栏中，DAX 语句最后返回的结果，例如：
+RETURNSUMMARIZE(TableWithReplacements,&#39;BATCH_INCIDENT_NUM&#39;[INCIDENT],[Engineer_Filled], -- Use the new column) 引入时填写：
+# From@{outputs(&#39;Run_a_query_against_a_dataset&#39;)?[&#39;body/firstTableRows&#39;]}# Value 直接引入@{item()?[&#39;BATCH_INCIDENT_NUM[SFC]&#39;]}@{item()?[&#39;[Engineer_Filled]&#39;]}# 引入变量@{variables(&#39;NCIF&#39;)}# Value 格式处理：浮点数小数位保留 2 位@{formatNumber(float(item()?[&#39;BATCH_INCIDENT_NUM[TIME]&#39;]), &#39;N2&#39;)} 在循环模块 Apply_to_each 中引用
+@{items(&#39;Apply_to_each&#39;)[&#39;[Engineer_Filled]&#39;]} 生成 HTML 表格 应用：在模块 Send an email (V2) 中，正文引入 @{outputs(‘Compose’)} 可以在邮件中发送表格。
+Create HTML table">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Power Automate">
+    <meta name="twitter:description" content="常用模块结果引入 Run_a_query_against_a_dataset 取决于 Query text 栏中，DAX 语句最后返回的结果，例如：
+RETURNSUMMARIZE(TableWithReplacements,&#39;BATCH_INCIDENT_NUM&#39;[INCIDENT],[Engineer_Filled], -- Use the new column) 引入时填写：
+# From@{outputs(&#39;Run_a_query_against_a_dataset&#39;)?[&#39;body/firstTableRows&#39;]}# Value 直接引入@{item()?[&#39;BATCH_INCIDENT_NUM[SFC]&#39;]}@{item()?[&#39;[Engineer_Filled]&#39;]}# 引入变量@{variables(&#39;NCIF&#39;)}# Value 格式处理：浮点数小数位保留 2 位@{formatNumber(float(item()?[&#39;BATCH_INCIDENT_NUM[TIME]&#39;]), &#39;N2&#39;)} 在循环模块 Apply_to_each 中引用
+@{items(&#39;Apply_to_each&#39;)[&#39;[Engineer_Filled]&#39;]} 生成 HTML 表格 应用：在模块 Send an email (V2) 中，正文引入 @{outputs(‘Compose’)} 可以在邮件中发送表格。
+Create HTML table">
+    <meta property="og:url" content="http://localhost:1313/WJNote/powerplatform/topic41/index.html">
+    <meta property="og:title" content="Power Automate">
+    <meta property="og:description" content="常用模块结果引入 Run_a_query_against_a_dataset 取决于 Query text 栏中，DAX 语句最后返回的结果，例如：
+RETURNSUMMARIZE(TableWithReplacements,&#39;BATCH_INCIDENT_NUM&#39;[INCIDENT],[Engineer_Filled], -- Use the new column) 引入时填写：
+# From@{outputs(&#39;Run_a_query_against_a_dataset&#39;)?[&#39;body/firstTableRows&#39;]}# Value 直接引入@{item()?[&#39;BATCH_INCIDENT_NUM[SFC]&#39;]}@{item()?[&#39;[Engineer_Filled]&#39;]}# 引入变量@{variables(&#39;NCIF&#39;)}# Value 格式处理：浮点数小数位保留 2 位@{formatNumber(float(item()?[&#39;BATCH_INCIDENT_NUM[TIME]&#39;]), &#39;N2&#39;)} 在循环模块 Apply_to_each 中引用
+@{items(&#39;Apply_to_each&#39;)[&#39;[Engineer_Filled]&#39;]} 生成 HTML 表格 应用：在模块 Send an email (V2) 中，正文引入 @{outputs(‘Compose’)} 可以在邮件中发送表格。
+Create HTML table">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="POWER PLATFORM">
+    <meta itemprop="name" content="Power Automate">
+    <meta itemprop="description" content="常用模块结果引入 Run_a_query_against_a_dataset 取决于 Query text 栏中，DAX 语句最后返回的结果，例如：
+RETURNSUMMARIZE(TableWithReplacements,&#39;BATCH_INCIDENT_NUM&#39;[INCIDENT],[Engineer_Filled], -- Use the new column) 引入时填写：
+# From@{outputs(&#39;Run_a_query_against_a_dataset&#39;)?[&#39;body/firstTableRows&#39;]}# Value 直接引入@{item()?[&#39;BATCH_INCIDENT_NUM[SFC]&#39;]}@{item()?[&#39;[Engineer_Filled]&#39;]}# 引入变量@{variables(&#39;NCIF&#39;)}# Value 格式处理：浮点数小数位保留 2 位@{formatNumber(float(item()?[&#39;BATCH_INCIDENT_NUM[TIME]&#39;]), &#39;N2&#39;)} 在循环模块 Apply_to_each 中引用
+@{items(&#39;Apply_to_each&#39;)[&#39;[Engineer_Filled]&#39;]} 生成 HTML 表格 应用：在模块 Send an email (V2) 中，正文引入 @{outputs(‘Compose’)} 可以在邮件中发送表格。
+Create HTML table">
+    <meta itemprop="wordCount" content="260">
+    <title>Power Automate</title>
+    <link href="/WJNote/fonts/fontawesome/css/fontawesome-all.min.css?1743851000" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/WJNote/fonts/fontawesome/css/fontawesome-all.min.css?1743851000" rel="stylesheet"></noscript>
+    <link href="/WJNote/css/perfect-scrollbar/perfect-scrollbar.min.css?1743851000" rel="stylesheet">
+    <link href="/WJNote/css/theme.css?1743851000" rel="stylesheet">
+    <link href="/WJNote/css/format-html.css?1743851000" rel="stylesheet" id="R-format-style">
+    <link href="/WJNote/css/auto-complete/auto-complete.min.css?1743851000" rel="stylesheet">
+    <script src="/WJNote/js/auto-complete/auto-complete.min.js?1743851000" defer></script>
+    <script src="/WJNote/js/lunr/lunr.min.js?1743851000" defer></script>
+    <script src="/WJNote/js/lunr/lunr.stemmer.support.min.js?1743851000" defer></script>
+    <script src="/WJNote/js/lunr/lunr.multi.min.js?1743851000" defer></script>
+    <script src="/WJNote/js/lunr/lunr.en.min.js?1743851000" defer></script>
+    <script src="/WJNote/js/search.js?1743851000" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/powerplatform\/topic41\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313\/WJNote';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/WJNote/searchindex.en.js?1743851000";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'wj' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/WJNote/powerplatform/topic41/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#常用模块结果引入">常用模块结果引入</a>
+      <ul>
+        <li><a href="#run_a_query_against_a_dataset">Run_a_query_against_a_dataset</a></li>
+      </ul>
+    </li>
+    <li><a href="#生成-html-表格">生成 HTML 表格</a>
+      <ul>
+        <li><a href="#create-html-table">Create HTML table</a></li>
+        <li><a href="#compose">Compose</a></li>
+      </ul>
+    </li>
+    <li><a href="#excel-表格操作">Excel 表格操作</a>
+      <ul>
+        <li><a href="#案例一插入-or-更新行">案例一：插入 or 更新行</a></li>
+        <li><a href="#案例二筛选">案例二：筛选</a></li>
+      </ul>
+    </li>
+    <li><a href="#variable">variable</a>
+      <ul>
+        <li><a href="#常用模块">常用模块：</a></li>
+      </ul>
+    </li>
+    <li><a href="#teams-通知">Teams 通知</a>
+      <ul>
+        <li><a href="#when-a-new-email-arrives-v3">When a new email arrives (V3)</a></li>
+        <li><a href="#post-adaptive-card-to-channel">Post adaptive card to channel</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/WJNote/powerplatform/index.html"><span itemprop="name">POWER PLATFORM</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Power Automate</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/WJNote/powerplatform/index.html" title="POWER PLATFORM (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/WJNote/section5/index.html" title="WAIT FOR ADD (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable powerplatform" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="power-automate">Power Automate</h1>
+
+<h2 id="常用模块结果引入">常用模块结果引入</h2>
+<h3 id="run_a_query_against_a_dataset">Run_a_query_against_a_dataset</h3>
+<p>取决于 <strong>Query text</strong> 栏中，DAX 语句最后返回的结果，例如：</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>RETURN
+SUMMARIZE(
+    TableWithReplacements,
+    &#39;BATCH_INCIDENT_NUM&#39;[INCIDENT],
+    [Engineer_Filled],  -- Use the new column
+)</code></pre></div>
+<p>引入时填写：</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code># From
+@{outputs(&#39;Run_a_query_against_a_dataset&#39;)?[&#39;body/firstTableRows&#39;]}
+
+# Value 直接引入
+@{item()?[&#39;BATCH_INCIDENT_NUM[SFC]&#39;]}
+@{item()?[&#39;[Engineer_Filled]&#39;]}
+
+# 引入变量
+@{variables(&#39;NCIF&#39;)}
+
+# Value 格式处理：浮点数小数位保留 2 位
+@{formatNumber(float(item()?[&#39;BATCH_INCIDENT_NUM[TIME]&#39;]), &#39;N2&#39;)}</code></pre></div>
+<p>在循环模块 <strong>Apply_to_each</strong> 中引用</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>@{items(&#39;Apply_to_each&#39;)[&#39;[Engineer_Filled]&#39;]}</code></pre></div>
+<h2 id="生成-html-表格">生成 HTML 表格</h2>
+<p>应用：在模块 Send an email (V2) 中，正文引入 @{outputs(&lsquo;Compose&rsquo;)} 可以在邮件中发送表格。</p>
+<p><a href="#R-image-5c06c557ecae89105df87a19884310ac" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/23095519.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5c06c557ecae89105df87a19884310ac"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/23095519.jpg"></a></p>
+<h3 id="create-html-table">Create HTML table</h3>
+<p><a href="#R-image-353c15fc583067357e04b38b03cd7f1c" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/23095743.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-353c15fc583067357e04b38b03cd7f1c"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/23095743.jpg"></a></p>
+<h3 id="compose">Compose</h3>
+<p><strong>Compose</strong> 模块内填入以下内容，修饰 <strong>Create_HTML_table</strong> 的格式：</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>&lt;style&gt;
+table {
+  border: 1px solid #00A9E0;
+  background-color: #FFFFFF;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table td, table th {
+  border: 1px solid #00A9E0;
+  padding: 3px 2px;
+}
+table tbody td {
+  font-size: 13px;
+}
+table thead {
+  background: #00A9E0; /* 设置标题行的背景颜色 */
+  border-bottom: 2px solid #444444;
+}
+table thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF; /* 设置标题行的文字颜色为白色 */
+  border-left: 2px solid #D0E4F5;
+}
+table thead th:first-child {
+  border-left: none;
+}
+&lt;/style&gt;@{body(&#39;Create_HTML_table&#39;)}</code></pre></div>
+<h2 id="excel-表格操作">Excel 表格操作</h2>
+<h3 id="案例一插入-or-更新行">案例一：插入 or 更新行</h3>
+<p><a href="#R-image-e9d4715ab0991e7b5a61ee4d8f73eb7c" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/23105215.jpg" style=" height: auto; width: auto;" title=" "></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e9d4715ab0991e7b5a61ee4d8f73eb7c"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/23105215.jpg" title=" "></a></p>
+<p>常用模块：</p>
+<ul>
+<li>List rows present in a table</li>
+<li>Apply to each</li>
+<li>Condition</li>
+<li>Add a row into a table</li>
+<li>Update a row</li>
+</ul>
+<h3 id="案例二筛选">案例二：筛选</h3>
+<p><a href="#R-image-7a19ed5eb9449cb1b608cbe550b1529f" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/23153355.jpg" style=" height: auto; width: auto;" title=" "></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7a19ed5eb9449cb1b608cbe550b1529f"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/23153355.jpg" title=" "></a></p>
+<ul>
+<li>
+<p>Filter array</p>
+<ul>
+<li>可以按单列筛选符合条件的行
+<a href="#R-image-71118ae9474480fe0dcd294cf8197f2e" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/23150539.jpg" style=" height: auto; width: auto;" title=" "></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-71118ae9474480fe0dcd294cf8197f2e"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/23150539.jpg" title=" "></a></li>
+</ul>
+</li>
+<li>
+<p>Update a row</p>
+<ul>
+<li>更改行内容
+<a href="#R-image-1496f98376bc445ab5141ab02ad4584c" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/23142723.jpg" style=" height: auto; width: auto;" title=" "></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1496f98376bc445ab5141ab02ad4584c"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/23142723.jpg" title=" "></a></li>
+</ul>
+</li>
+</ul>
+<h2 id="variable">variable</h2>
+<p>主要在 Condition 中使用 Variable。
+<a href="#R-image-b944bfcff98c83d80faf8eaee0b8b55e" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/23145906.jpg" style=" height: auto; width: auto;" title=" "></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b944bfcff98c83d80faf8eaee0b8b55e"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/23145906.jpg" title=" "></a></p>
+<h3 id="常用模块">常用模块：</h3>
+<ul>
+<li>Initialize variable</li>
+<li>Append to array variable</li>
+<li>Increment variable</li>
+<li>Set variable</li>
+</ul>
+<h2 id="teams-通知">Teams 通知</h2>
+<p>收到特定发件人的邮件后，转发到 Teams 聊天组中。</p>
+<p><a href="#R-image-e1c6055bf2b50d8c2a68e8af0eb5b7c0" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/26165556.jpg" style=" height: auto; width: auto;" title=" "></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e1c6055bf2b50d8c2a68e8af0eb5b7c0"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/26165556.jpg" title=" "></a></p>
+<h3 id="when-a-new-email-arrives-v3">When a new email arrives (V3)</h3>
+<p><a href="#R-image-718dd0bdac6f57e434da6c8fd9cb439c" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/27102709.jpg" style=" height: auto; width: auto;" title=" "></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-718dd0bdac6f57e434da6c8fd9cb439c"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/27102709.jpg" title=" "></a></p>
+<h3 id="post-adaptive-card-to-channel">Post adaptive card to channel</h3>
+<p><a href="#R-image-07068a29f12443f91bddb52e427b3765" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/26165633.jpg" style=" height: auto; width: auto;" title=" "></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-07068a29f12443f91bddb52e427b3765"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/26165633.jpg" title=" "></a></p>
+<p>Adaptive Card:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>{
+    &#34;$schema&#34;: &#34;http://adaptivecards.io/schemas/adaptive-card.json&#34;,
+    &#34;type&#34;: &#34;AdaptiveCard&#34;,
+    &#34;version&#34;: &#34;1.2&#34;,
+    &#34;body&#34;: [
+ {
+            &#34;type&#34;: &#34;TextBlock&#34;,
+            &#34;text&#34;: &#34;Andon Notification&#34;,
+            &#34;wrap&#34;: true,
+            &#34;size&#34;: &#34;ExtraLarge&#34;,
+            &#34;weight&#34;: &#34;Bolder&#34;
+        },
+        {
+            &#34;type&#34;: &#34;TextBlock&#34;,
+            &#34;text&#34;: &#34;@{replace(triggerOutputs()?[&#39;body/subject&#39;], &#39;&#34;&#39;, &#39;\&#34;&#39;)}&#34;,
+            &#34;weight&#34;: &#34;Bolder&#34;,
+            &#34;size&#34;: &#34;Medium&#34;
+        },
+        {
+            &#34;type&#34;: &#34;TextBlock&#34;,
+            &#34;text&#34;: &#34;From: @{triggerOutputs()?[&#39;body/from&#39;]}&#34;,
+            &#34;wrap&#34;: true,
+ &#34;weight&#34;: &#34;Lighter&#34;,
+        },
+        {
+            &#34;type&#34;: &#34;TextBlock&#34;,
+            &#34;text&#34;: &#34;@{replace(triggerOutputs()?[&#39;body/bodyPreview&#39;],&#39;&#34;&#39;, &#39;\&#34;&#39;)}&#34;,
+            &#34;isSubtle&#34;: true,
+            &#34;wrap&#34;: true
+        }
+    ]
+}</code></pre></div>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <a id="R-logo" class="R-default" href="/WJNote/index.html">
+            <div class="logo-title"></div>
+          </a>
+        </div>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/WJNote/index.html"><a class="padding" href="/WJNote/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/WJNote/hugo/index.html"><a class="padding" href="/WJNote/hugo/index.html">HUGO</a><ul id="R-subsections-deefdfb1bf287f4e1b98b48eb2a674a4" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/WJNote/python/index.html"><a class="padding" href="/WJNote/python/index.html">PYTHON</a></li>
+            <li class="" data-nav-id="/WJNote/sql/index.html"><a class="padding" href="/WJNote/sql/index.html">SQL</a></li>
+            <li class="parent " data-nav-id="/WJNote/powerplatform/index.html"><a class="padding" href="/WJNote/powerplatform/index.html">POWER PLATFORM</a><ul id="R-subsections-22bc62080ca0195408fd55807cb05028" class="collapsible-menu">
+            <li class="active " data-nav-id="/WJNote/powerplatform/topic41/index.html"><a class="padding" href="/WJNote/powerplatform/topic41/index.html">Power Automate</a></li></ul></li>
+            <li class="" data-nav-id="/WJNote/section5/index.html"><a class="padding" href="/WJNote/section5/index.html">WAIT FOR ADD</a></li>
+            <li class="" data-nav-id="/WJNote/posts/index.html"><a class="padding" href="/WJNote/posts/index.html">Posts</a></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/WJNote/js/clipboard/clipboard.min.js?1743851000" defer></script>
+    <script src="/WJNote/js/perfect-scrollbar/perfect-scrollbar.min.js?1743851000" defer></script>
+    <script src="/WJNote/js/theme.js?1743851000" defer></script>
+  </body>
+</html>

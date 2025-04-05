@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/WJNote/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=WJNote/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 7.6.0+b932d301d7838f3c1a50e318e216b55ce5cc9148">
+    <meta name="description" content="Mac 电脑装机，配置代码环境。
+设置使 Mac 中的 Python 默认指向 Python 3 检查当前 Python 版本和地址。 打开终端，运行：
+python --version python3 --version which python which python3 创建符号链接，将 python 命令链接到 python3。 运行以下命令：
+# 删除现有的 Python 符号链接： sudo rm /usr/local/bin/python #创建新的符号链接，将 python 链接到 Python 3 的路径： sudo ln -s /Library/Frameworks/Python.framework/Versions/3.13/bin/python3 /usr/local/bin/python 重新运行：python --version，设置成功应该显示 Python 3.x。
+安装 pip 检查 pip 是否已经安装：
+python -m ensurepip --upgrade 使用 get-pip.py 安装（如果尚未安装）：
+下载 get-pip.py 脚本： curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py # 运行 get-pip.py 来安装 pip： python get-pip.py # 更新 pip： python -m pip install --upgrade pip vscode 配置解释器 按住 ctrl&#43;shift&#43;p （macOS: cmd&#43;shift&#43;p）输入文本查找并选择 Python:Select Inerpreter。 选择正确的 python 版本。">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Environment Configuration">
+    <meta name="twitter:description" content="Mac 电脑装机，配置代码环境。
+设置使 Mac 中的 Python 默认指向 Python 3 检查当前 Python 版本和地址。 打开终端，运行：
+python --version python3 --version which python which python3 创建符号链接，将 python 命令链接到 python3。 运行以下命令：
+# 删除现有的 Python 符号链接： sudo rm /usr/local/bin/python #创建新的符号链接，将 python 链接到 Python 3 的路径： sudo ln -s /Library/Frameworks/Python.framework/Versions/3.13/bin/python3 /usr/local/bin/python 重新运行：python --version，设置成功应该显示 Python 3.x。
+安装 pip 检查 pip 是否已经安装：
+python -m ensurepip --upgrade 使用 get-pip.py 安装（如果尚未安装）：
+下载 get-pip.py 脚本： curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py # 运行 get-pip.py 来安装 pip： python get-pip.py # 更新 pip： python -m pip install --upgrade pip vscode 配置解释器 按住 ctrl&#43;shift&#43;p （macOS: cmd&#43;shift&#43;p）输入文本查找并选择 Python:Select Inerpreter。 选择正确的 python 版本。">
+    <meta property="og:url" content="http://localhost:1313/WJNote/python/configuration/index.html">
+    <meta property="og:title" content="Environment Configuration">
+    <meta property="og:description" content="Mac 电脑装机，配置代码环境。
+设置使 Mac 中的 Python 默认指向 Python 3 检查当前 Python 版本和地址。 打开终端，运行：
+python --version python3 --version which python which python3 创建符号链接，将 python 命令链接到 python3。 运行以下命令：
+# 删除现有的 Python 符号链接： sudo rm /usr/local/bin/python #创建新的符号链接，将 python 链接到 Python 3 的路径： sudo ln -s /Library/Frameworks/Python.framework/Versions/3.13/bin/python3 /usr/local/bin/python 重新运行：python --version，设置成功应该显示 Python 3.x。
+安装 pip 检查 pip 是否已经安装：
+python -m ensurepip --upgrade 使用 get-pip.py 安装（如果尚未安装）：
+下载 get-pip.py 脚本： curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py # 运行 get-pip.py 来安装 pip： python get-pip.py # 更新 pip： python -m pip install --upgrade pip vscode 配置解释器 按住 ctrl&#43;shift&#43;p （macOS: cmd&#43;shift&#43;p）输入文本查找并选择 Python:Select Inerpreter。 选择正确的 python 版本。">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Environment Configuration">
+    <meta itemprop="description" content="Mac 电脑装机，配置代码环境。
+设置使 Mac 中的 Python 默认指向 Python 3 检查当前 Python 版本和地址。 打开终端，运行：
+python --version python3 --version which python which python3 创建符号链接，将 python 命令链接到 python3。 运行以下命令：
+# 删除现有的 Python 符号链接： sudo rm /usr/local/bin/python #创建新的符号链接，将 python 链接到 Python 3 的路径： sudo ln -s /Library/Frameworks/Python.framework/Versions/3.13/bin/python3 /usr/local/bin/python 重新运行：python --version，设置成功应该显示 Python 3.x。
+安装 pip 检查 pip 是否已经安装：
+python -m ensurepip --upgrade 使用 get-pip.py 安装（如果尚未安装）：
+下载 get-pip.py 脚本： curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py # 运行 get-pip.py 来安装 pip： python get-pip.py # 更新 pip： python -m pip install --upgrade pip vscode 配置解释器 按住 ctrl&#43;shift&#43;p （macOS: cmd&#43;shift&#43;p）输入文本查找并选择 Python:Select Inerpreter。 选择正确的 python 版本。">
+    <meta itemprop="wordCount" content="211">
+    <title>Environment Configuration</title>
+    <link href="/WJNote/python/configuration/index.xml" rel="alternate" type="application/rss+xml" title="Environment Configuration">
+    <link href="/WJNote/fonts/fontawesome/css/fontawesome-all.min.css?1743855011" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/WJNote/fonts/fontawesome/css/fontawesome-all.min.css?1743855011" rel="stylesheet"></noscript>
+    <link href="/WJNote/css/perfect-scrollbar/perfect-scrollbar.min.css?1743855011" rel="stylesheet">
+    <link href="/WJNote/css/theme.css?1743855011" rel="stylesheet">
+    <link href="/WJNote/css/format-html.css?1743855011" rel="stylesheet" id="R-format-style">
+    <link href="/WJNote/css/auto-complete/auto-complete.min.css?1743855011" rel="stylesheet">
+    <script src="/WJNote/js/auto-complete/auto-complete.min.js?1743855011" defer></script>
+    <script src="/WJNote/js/lunr/lunr.min.js?1743855011" defer></script>
+    <script src="/WJNote/js/lunr/lunr.stemmer.support.min.js?1743855011" defer></script>
+    <script src="/WJNote/js/lunr/lunr.multi.min.js?1743855011" defer></script>
+    <script src="/WJNote/js/lunr/lunr.en.min.js?1743855011" defer></script>
+    <script src="/WJNote/js/search.js?1743855011" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/python\/configuration\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313\/WJNote';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/WJNote/searchindex.en.js?1743855011";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'wj' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/WJNote/python/configuration/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#设置使-mac-中的-python-默认指向-python-3">设置使 Mac 中的 Python 默认指向 Python 3</a></li>
+        <li><a href="#安装-pip">安装 pip</a></li>
+        <li><a href="#vscode-配置解释器">vscode 配置解释器</a></li>
+        <li><a href="#ssl-证书问题">SSL 证书问题</a></li>
+        <li><a href="#删除当前安装-python">删除当前安装 python</a></li>
+      </ul>
+    </li>
+    <li><a href="#homebrew">Homebrew</a>
+      <ul>
+        <li><a href="#安装-brew">安装 brew</a></li>
+        <li><a href="#手动添加-homebrew-到-path">手动添加 Homebrew 到 PATH</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/WJNote/python/index.html"><span itemprop="name">PYTHON</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Environment Configuration</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/WJNote/python/index.html" title="PYTHON (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/WJNote/python/topic4/index.html" title="PYTHON (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable python" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="environment-configuration">Environment Configuration</h1>
+
+<p>Mac 电脑装机，配置代码环境。</p>
+<h3 id="设置使-mac-中的-python-默认指向-python-3">设置使 Mac 中的 Python 默认指向 Python 3</h3>
+<h4 id="检查当前-python-版本和地址">检查当前 Python 版本和地址。</h4>
+<p>打开终端，运行：</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>python --version
+python3 --version
+
+which python
+which python3</code></pre></div>
+<h4 id="创建符号链接将-python-命令链接到-python3">创建符号链接，将 python 命令链接到 python3。</h4>
+<p>运行以下命令：</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code># 删除现有的 Python 符号链接：
+sudo rm /usr/local/bin/python
+
+#创建新的符号链接，将 python 链接到 Python 3 的路径：
+sudo ln -s /Library/Frameworks/Python.framework/Versions/3.13/bin/python3 /usr/local/bin/python</code></pre></div>
+<p>重新运行：<code>python --version</code>，设置成功应该显示 Python 3.x。</p>
+<h3 id="安装-pip">安装 pip</h3>
+<p>检查 pip 是否已经安装：</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>python -m ensurepip --upgrade</code></pre></div>
+<p>使用 get-pip.py 安装（如果尚未安装）：</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>下载 get-pip.py 脚本：
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+
+# 运行 get-pip.py 来安装 pip：
+python get-pip.py
+
+# 更新 pip：
+python -m pip install --upgrade pip</code></pre></div>
+<h3 id="vscode-配置解释器">vscode 配置解释器</h3>
+<p>按住 ctrl+shift+p （macOS: cmd+shift+p）输入文本查找并选择 Python:Select Inerpreter。
+<a href="#R-image-2dbd82171942b00302ea78a8b717b5ed" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/1442112.png" style=" height: auto; width: auto;" title=" "></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2dbd82171942b00302ea78a8b717b5ed"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/1442112.png" title=" "></a>
+选择正确的 python 版本。
+<a href="#R-image-e83e507e5610f9d44a382c9c50d2d174" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="images/12332111.png" style=" height: auto; width: auto;" title=" "></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e83e507e5610f9d44a382c9c50d2d174"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="images/12332111.png" title=" "></a></p>
+<h3 id="ssl-证书问题">SSL 证书问题</h3>
+<p>pip 安装某些库时报错：There was a problem confirming the ssl certificate: &hellip;，<strong>关掉代理</strong>。</p>
+<h3 id="删除当前安装-python">删除当前安装 python</h3>
+<p>/bin/bash -c &ldquo;$(curl -fsSL <a href="https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh%29%22" rel="external" target="_blank">https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"</a></p>
+<p>删除与 Python 相关的文件：</p>
+<ul>
+<li>删除全局 Python 可执行文件和链接：</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo rm -f /usr/local/bin/python3
+sudo rm -f /usr/local/bin/python
+sudo rm -f /usr/local/bin/pip3
+sudo rm -f /usr/local/bin/pip</code></pre></div>
+<ul>
+<li>删除残留的配置文件：
+手动清理残留的配置文件（例如在 ~/.bash_profile, ~/.zshrc 等文件中设置的 Python 环境变量）。</li>
+</ul>
+<h2 id="homebrew">Homebrew</h2>
+<h3 id="安装-brew">安装 brew</h3>
+<p>打开终端，运行以下命令来安装 Homebrew（需要管理员密码）：</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>/bin/bash -c &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&#34;
+
+# 验证 Homebrew 是否安装成功
+brew --version</code></pre></div>
+<p>如果 curl 命令无法直接下载 Homebrew 安装脚本（Failed to connect to raw.githubusercontent.com port 443 after 1 ms: Couldn&rsquo;t connect to server，），可以从浏览器直接下载该脚本手动运行：</p>
+<ul>
+<li>在浏览器中访问 URL：https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh。</li>
+<li>将脚本下载到本地文件系统。</li>
+<li>在终端中进入文件所在目录并运行：<code>/bin/bash install.sh</code></li>
+</ul>
+<h3 id="手动添加-homebrew-到-path">手动添加 Homebrew 到 PATH</h3>
+<p>打开终端</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code># 编辑 ~/.zshrc 文件
+nano ~/.zshrc
+
+#在文件的末尾添加以下内容（Homebrew 默认安装的路径 Apple Silicon Macs）。
+export PATH=&#34;/opt/homebrew/bin:$PATH&#34;</code></pre></div>
+<p>保存并退出编辑器（按 Ctrl + X，然后按 Y 和 Enter）。
+重新加载 ~/.zshrc 文件，使修改生效：</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>source ~/.zshrc</code></pre></div>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <a id="R-logo" class="R-default" href="/WJNote/index.html">
+            <div class="logo-title"></div>
+          </a>
+        </div>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/WJNote/index.html"><a class="padding" href="/WJNote/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/WJNote/hugo/index.html"><a class="padding" href="/WJNote/hugo/index.html">HUGO</a><ul id="R-subsections-deefdfb1bf287f4e1b98b48eb2a674a4" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/WJNote/python/index.html"><a class="padding" href="/WJNote/python/index.html">PYTHON</a><ul id="R-subsections-e59a306ea2eb42b73261573b05085bcc" class="collapsible-menu">
+            <li class="active " data-nav-id="/WJNote/python/configuration/index.html"><a class="padding" href="/WJNote/python/configuration/index.html">Environment Configuration</a></li>
+            <li class="" data-nav-id="/WJNote/python/topic4/index.html"><a class="padding" href="/WJNote/python/topic4/index.html">PYTHON</a></li>
+            <li class="" data-nav-id="/WJNote/python/topic51/index.html"><a class="padding" href="/WJNote/python/topic51/index.html">PYTHON</a></li>
+            <li class="" data-nav-id="/WJNote/python/topic52/index.html"><a class="padding" href="/WJNote/python/topic52/index.html">PYTHON</a></li></ul></li>
+            <li class="" data-nav-id="/WJNote/sql/index.html"><a class="padding" href="/WJNote/sql/index.html">SQL</a></li>
+            <li class="" data-nav-id="/WJNote/powerplatform/index.html"><a class="padding" href="/WJNote/powerplatform/index.html">POWER PLATFORM</a><ul id="R-subsections-22bc62080ca0195408fd55807cb05028" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/WJNote/section5/index.html"><a class="padding" href="/WJNote/section5/index.html">WAIT FOR ADD</a></li>
+            <li class="" data-nav-id="/WJNote/posts/index.html"><a class="padding" href="/WJNote/posts/index.html">Posts</a></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/WJNote/js/clipboard/clipboard.min.js?1743855011" defer></script>
+    <script src="/WJNote/js/perfect-scrollbar/perfect-scrollbar.min.js?1743855011" defer></script>
+    <script src="/WJNote/js/theme.js?1743855011" defer></script>
+  </body>
+</html>

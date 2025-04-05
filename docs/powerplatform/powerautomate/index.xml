@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Power Automate</title>
+    <link>https://astra726.github.io/WJNote/powerplatform/powerautomate/index.html</link>
+    <description>Excel 相关操作 List rows present in a table Apply to each Condition Add a row into a table Filter array Update a row&#xA;Filter array 按单列筛选符合条件的行。 Update a row 更改符合条件的筛选行内容。 变量引入 Initialize variable Append to array variable Increment variable Set variable</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://astra726.github.io/WJNote/powerplatform/powerautomate/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/WJNote/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=WJNote/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 7.6.0+b932d301d7838f3c1a50e318e216b55ce5cc9148">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="Table operation # Delete table DROP TABLE IF EXISTS TableName # Change table name ALTER TABLE TableName_Old RENAME TO TableName_New # 获取总行数 SELECT COUNT(*) FROM TableName total_rows = cursor.fetchone()[0] Deduplication GROUP BY 中要包括所有需要保持唯一的列。
+cursor.execute(&#34;&#34;&#34; DELETE FROM TableName WHERE ROWID NOT IN ( SELECT MIN(ROWID) FROM TableName GROUP BY ColumnName1, ColumnName2) &#34;&#34;&#34;) 示例
+ROWID MEASURE_NAME MEASURE_GROUP DESCRIPTION ACTUAL 1 Test1 Group1 Desc1 10 2 Test1 Group1 Desc2 15 3 Test2 Group2 Desc3 20 如果 GROUP BY 是 MEASURE_NAME, MEASURE_GROUP， ROWID 1 和 ROWID 2 会被视为同一组，因为 MEASURE_NAME 和 MEASURE_GROUP 相同。">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:description" content="Table operation # Delete table DROP TABLE IF EXISTS TableName # Change table name ALTER TABLE TableName_Old RENAME TO TableName_New # 获取总行数 SELECT COUNT(*) FROM TableName total_rows = cursor.fetchone()[0] Deduplication GROUP BY 中要包括所有需要保持唯一的列。
+cursor.execute(&#34;&#34;&#34; DELETE FROM TableName WHERE ROWID NOT IN ( SELECT MIN(ROWID) FROM TableName GROUP BY ColumnName1, ColumnName2) &#34;&#34;&#34;) 示例
+ROWID MEASURE_NAME MEASURE_GROUP DESCRIPTION ACTUAL 1 Test1 Group1 Desc1 10 2 Test1 Group1 Desc2 15 3 Test2 Group2 Desc3 20 如果 GROUP BY 是 MEASURE_NAME, MEASURE_GROUP， ROWID 1 和 ROWID 2 会被视为同一组，因为 MEASURE_NAME 和 MEASURE_GROUP 相同。">
+    <meta property="og:url" content="http://localhost:1313/WJNote/powerplatmate/topic32/index.html">
+    <meta property="og:description" content="Table operation # Delete table DROP TABLE IF EXISTS TableName # Change table name ALTER TABLE TableName_Old RENAME TO TableName_New # 获取总行数 SELECT COUNT(*) FROM TableName total_rows = cursor.fetchone()[0] Deduplication GROUP BY 中要包括所有需要保持唯一的列。
+cursor.execute(&#34;&#34;&#34; DELETE FROM TableName WHERE ROWID NOT IN ( SELECT MIN(ROWID) FROM TableName GROUP BY ColumnName1, ColumnName2) &#34;&#34;&#34;) 示例
+ROWID MEASURE_NAME MEASURE_GROUP DESCRIPTION ACTUAL 1 Test1 Group1 Desc1 10 2 Test1 Group1 Desc2 15 3 Test2 Group2 Desc3 20 如果 GROUP BY 是 MEASURE_NAME, MEASURE_GROUP， ROWID 1 和 ROWID 2 会被视为同一组，因为 MEASURE_NAME 和 MEASURE_GROUP 相同。">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="SQL">
+    <meta itemprop="description" content="Table operation # Delete table DROP TABLE IF EXISTS TableName # Change table name ALTER TABLE TableName_Old RENAME TO TableName_New # 获取总行数 SELECT COUNT(*) FROM TableName total_rows = cursor.fetchone()[0] Deduplication GROUP BY 中要包括所有需要保持唯一的列。
+cursor.execute(&#34;&#34;&#34; DELETE FROM TableName WHERE ROWID NOT IN ( SELECT MIN(ROWID) FROM TableName GROUP BY ColumnName1, ColumnName2) &#34;&#34;&#34;) 示例
+ROWID MEASURE_NAME MEASURE_GROUP DESCRIPTION ACTUAL 1 Test1 Group1 Desc1 10 2 Test1 Group1 Desc2 15 3 Test2 Group2 Desc3 20 如果 GROUP BY 是 MEASURE_NAME, MEASURE_GROUP， ROWID 1 和 ROWID 2 会被视为同一组，因为 MEASURE_NAME 和 MEASURE_GROUP 相同。">
+    <meta itemprop="wordCount" content="239">
+    <title></title>
+    <link href="/WJNote/fonts/fontawesome/css/fontawesome-all.min.css?1743849727" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/WJNote/fonts/fontawesome/css/fontawesome-all.min.css?1743849727" rel="stylesheet"></noscript>
+    <link href="/WJNote/css/perfect-scrollbar/perfect-scrollbar.min.css?1743849727" rel="stylesheet">
+    <link href="/WJNote/css/theme.css?1743849727" rel="stylesheet">
+    <link href="/WJNote/css/format-html.css?1743849727" rel="stylesheet" id="R-format-style">
+    <link href="/WJNote/css/auto-complete/auto-complete.min.css?1743849727" rel="stylesheet">
+    <script src="/WJNote/js/auto-complete/auto-complete.min.js?1743849727" defer></script>
+    <script src="/WJNote/js/lunr/lunr.min.js?1743849727" defer></script>
+    <script src="/WJNote/js/lunr/lunr.stemmer.support.min.js?1743849727" defer></script>
+    <script src="/WJNote/js/lunr/lunr.multi.min.js?1743849727" defer></script>
+    <script src="/WJNote/js/lunr/lunr.en.min.js?1743849727" defer></script>
+    <script src="/WJNote/js/search.js?1743849727" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/powerplatmate\/topic32\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313\/WJNote';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/WJNote/searchindex.en.js?1743849727";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'wj' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/WJNote/powerplatmate/topic32/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#table-operation">Table operation</a>
+      <ul>
+        <li><a href="#deduplication">Deduplication</a></li>
+      </ul>
+    </li>
+    <li><a href="#column-operation">Column operation</a>
+      <ul>
+        <li><a href="#delete-column">Delete column</a></li>
+        <li><a href="#add-column">Add Column</a></li>
+      </ul>
+    </li>
+    <li><a href="#character-operation">Character operation</a>
+      <ul>
+        <li><a href="#fixed-position">Fixed position</a></li>
+        <li><a href="#regular-expression">Regular expression</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/WJNote/powerplatmate/index.html"><span itemprop="name">SQL</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/WJNote/powerplatmate/index.html" title="SQL (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/WJNote/section4/index.html" title="Power Automate (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable powerplatmate" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id=""></h1>
+
+<h2 id="table-operation">Table operation</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code># Delete table
+DROP TABLE IF EXISTS TableName
+
+# Change table name
+ALTER TABLE TableName_Old RENAME TO TableName_New
+
+# 获取总行数
+SELECT COUNT(*) FROM TableName
+total_rows = cursor.fetchone()[0]</code></pre></div>
+<h3 id="deduplication">Deduplication</h3>
+<p>GROUP BY 中要包括所有需要保持唯一的列。</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>cursor.execute(&#34;&#34;&#34;
+    DELETE FROM TableName
+    WHERE ROWID NOT IN (
+        SELECT MIN(ROWID)
+        FROM TableName
+        GROUP BY ColumnName1, ColumnName2)
+&#34;&#34;&#34;)</code></pre></div>
+<blockquote>
+<p>示例</p></blockquote>
+<blockquote>
+<table>
+  <thead>
+      <tr>
+          <th>ROWID</th>
+          <th>MEASURE_NAME</th>
+          <th>MEASURE_GROUP</th>
+          <th>DESCRIPTION</th>
+          <th>ACTUAL</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>Test1</td>
+          <td>Group1</td>
+          <td>Desc1</td>
+          <td>10</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>Test1</td>
+          <td>Group1</td>
+          <td>Desc2</td>
+          <td>15</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>Test2</td>
+          <td>Group2</td>
+          <td>Desc3</td>
+          <td>20</td>
+      </tr>
+  </tbody>
+</table></blockquote>
+<blockquote>
+<p>如果 GROUP BY 是 MEASURE_NAME, MEASURE_GROUP， ROWID 1 和 ROWID 2 会被视为同一组，因为 MEASURE_NAME 和 MEASURE_GROUP 相同。</p></blockquote>
+<blockquote>
+<p>由于 MIN(ROWID) 的使用，ROWID 1 会被保留，ROWID 2 会被删除，即便 DESCRIPTION 和 ACTUAL 不同。</p></blockquote>
+<h2 id="column-operation">Column operation</h2>
+<h3 id="delete-column">Delete column</h3>
+<p>SQLite 不支持使用 ALTER TABLE 直接删除列。可以组合操作，创建一个新的表，复制数据时不包括该列，删除原始表，然后重命名新表为原始表的名称。</p>
+<h3 id="add-column">Add Column</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code># 检查表中是否已存在此列
+cursor.execute(&#34;PRAGMA table_info(TableName)&#34;)
+columns = [col[1] for col in cursor.fetchall()]
+
+if &#39;ColumnName&#39; not in columns:
+    # 创建 ColumnName 列，ColumnType 为数据类型
+    cursor.execute(&#34;&#34;&#34; ALTER TABLE TableName ADD COLUMN ColumnName ColumnType &#34;&#34;&#34;)</code></pre></div>
+<h2 id="character-operation">Character operation</h2>
+<h3 id="fixed-position">Fixed position</h3>
+<p>执行 UPDATE 语句，以 &lsquo;,&rsquo; 为分隔符选择 ColumnName 列中固定第 n+1 部分：</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>UPDATE TableName
+SET ColumnName = substr(ColumnName, instr(ColumnName, &#39;,&#39;) + n)</code></pre></div>
+<h3 id="regular-expression">Regular expression</h3>
+<p>表达式顺序：范围小的放到前面以优先匹配。</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code># 在两列长文本中提取能量信息。
+# 正则表达式，匹配数字后跟 X, E, FFF 或 HDTSE。
+energy_pattern = re.compile(r&#39;(\d+XFFF|2_5X|\d+X|\d+E|\d+HDTSE)&#39;)
+
+# 提取能量信息并更新新的列
+cursor.execute(&#34;SELECT ROWID, MEASURE_GROUP, MEASURE_NAME FROM dc_group_filtered&#34;)
+rows = cursor.fetchall()
+
+for row in rows:
+    rowid, measure_group, measure_name = row
+    # 在 MEASURE_GROUP 和 MEASURE_NAME 中搜索能量信息。下面两个表达式有先后顺序。
+    match_group = energy_pattern.search(measure_name)
+    match_name = energy_pattern.search(measure_group)
+    
+    # 提取找到的第一个匹配项
+    energy = match_group.group(0) if match_group else (match_name.group(0) if match_name else None)
+    
+    # 更新表中的新列
+    cursor.execute(&#34;&#34;&#34;
+        UPDATE dc_group_filtered
+        SET ENERGY = ?
+        WHERE ROWID = ?
+    &#34;&#34;&#34;, (energy, rowid))</code></pre></div>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <a id="R-logo" class="R-default" href="/WJNote/index.html">
+            <div class="logo-title"></div>
+          </a>
+        </div>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/WJNote/index.html"><a class="padding" href="/WJNote/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/WJNote/hugo/index.html"><a class="padding" href="/WJNote/hugo/index.html">HUGO</a><ul id="R-subsections-deefdfb1bf287f4e1b98b48eb2a674a4" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/WJNote/python/index.html"><a class="padding" href="/WJNote/python/index.html">PYTHON</a></li>
+            <li class="parent " data-nav-id="/WJNote/powerplatmate/index.html"><a class="padding" href="/WJNote/powerplatmate/index.html">SQL</a><ul id="R-subsections-966f8985f695ff2230bbfdd70e202bc3" class="collapsible-menu">
+            <li class="active hidden " data-nav-id="/WJNote/powerplatmate/topic32/index.html"><a class="padding" href="/WJNote/powerplatmate/topic32/index.html"></a></li></ul></li>
+            <li class="" data-nav-id="/WJNote/section4/index.html"><a class="padding" href="/WJNote/section4/index.html">Power Automate</a></li>
+            <li class="" data-nav-id="/WJNote/section5/index.html"><a class="padding" href="/WJNote/section5/index.html">MKDocs</a></li>
+            <li class="" data-nav-id="/WJNote/posts/index.html"><a class="padding" href="/WJNote/posts/index.html">Posts</a></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/WJNote/js/clipboard/clipboard.min.js?1743849727" defer></script>
+    <script src="/WJNote/js/perfect-scrollbar/perfect-scrollbar.min.js?1743849727" defer></script>
+    <script src="/WJNote/js/theme.js?1743849727" defer></script>
+  </body>
+</html>

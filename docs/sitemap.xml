@@ -1,25 +1,43 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://astra726.github.io/WJNote/section1/topic1/index.html</loc>
+    <loc>https://astra726.github.io/WJNote/powerplatform/powerautomate/index.html</loc>
   </url>
   <url>
-    <loc>https://astra726.github.io/WJNote/section1/topic2/index.html</loc>
+    <loc>https://astra726.github.io/WJNote/hugo/theme/index.html</loc>
   </url>
   <url>
-    <loc>https://astra726.github.io/WJNote/section1/topic3/index.html</loc>
+    <loc>https://astra726.github.io/WJNote/hugo/topic1/index.html</loc>
   </url>
   <url>
-    <loc>https://astra726.github.io/WJNote/section1/index.html</loc>
+    <loc>https://astra726.github.io/WJNote/hugo/github/index.html</loc>
   </url>
   <url>
-    <loc>https://astra726.github.io/WJNote/section2/index.html</loc>
+    <loc>https://astra726.github.io/WJNote/sql/sqlite/index.html</loc>
   </url>
   <url>
-    <loc>https://astra726.github.io/WJNote/section3/index.html</loc>
+    <loc>https://astra726.github.io/WJNote/python/environment/index.html</loc>
   </url>
   <url>
-    <loc>https://astra726.github.io/WJNote/section4/index.html</loc>
+    <loc>https://astra726.github.io/WJNote/hugo/index.html</loc>
+  </url>
+  <url>
+    <loc>https://astra726.github.io/WJNote/python/common/index.html</loc>
+  </url>
+  <url>
+    <loc>https://astra726.github.io/WJNote/sql/topic32/index.html</loc>
+  </url>
+  <url>
+    <loc>https://astra726.github.io/WJNote/python/index.html</loc>
+  </url>
+  <url>
+    <loc>https://astra726.github.io/WJNote/python/topic33/index.html</loc>
+  </url>
+  <url>
+    <loc>https://astra726.github.io/WJNote/sql/index.html</loc>
+  </url>
+  <url>
+    <loc>https://astra726.github.io/WJNote/powerplatform/index.html</loc>
   </url>
   <url>
     <loc>https://astra726.github.io/WJNote/section5/index.html</loc>

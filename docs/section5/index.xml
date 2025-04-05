@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>MKDocs</title>
+    <title>WAIT FOR ADD</title>
     <link>https://astra726.github.io/WJNote/section5/index.html</link>
     <description>子页面列表 {{ range .Pages }} {{ .Title }} {{ end }}</description>
     <generator>Hugo</generator>
