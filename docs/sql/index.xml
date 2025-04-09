@@ -19,7 +19,7 @@
       <link>https://astra726.github.io/WJNote/sql/topic32/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://astra726.github.io/WJNote/sql/topic32/index.html</guid>
-      <description>python 连接 SQL 创建一个查询函数。&#xA;import sqlite3 # 创建一个查询函数 def query_database(query): # 创建 SQLite 连接 conn = sqlite3.connect(db_file_path) cursor = conn.cursor() # 执行 SQL 查询 cursor.execute(query) # 提交更改并关闭连接 conn.commit() conn.close() Print result cursor.fetchall() 返回列表，其中每一行都是一个元组。结果存在内存中。&#xA;# 获取所有结果 result = cursor.fetchall() # 获取指定第 n+1 行 result = cursor.fetchall()[n] cursor.fetchone() 返回查询结果的第一行，如果存在多行，它只会返回第一行的内容。&#xA;# 指定输出第一行的第 n+1 个元素 result = cursor.fetchone()[n] 但是 .fetchone() 每次调用都会取出并移动到下一行，所以可以实现类似 .fetchall()[n] 的功能：&#xA;# 获取第 3 行 result = cursor.fetchone() result = cursor.fetchone() result = cursor.fetchone() # 获取指定第 n+1 行 N = n result = None for _ in range(N): result = cursor.fetchone() print(result) Table operation # Delete table DROP TABLE IF EXISTS TableName # Change table name ALTER TABLE TableName_Old RENAME TO TableName_New # 获取总行数 SELECT COUNT(*) FROM TableName total_rows = cursor.fetchone()[0] Deduplication GROUP BY 中要包括所有需要保持唯一的列。</description>
+      <description>Python Connecting to SQL Databases Using sqlite3 (Built-in Python). 1 2 3 4 5 6 7 8 9 10 11 12 import sqlite3 def query_database(query): # create SQLite connect conn = sqlite3.connect(db_file_path) cursor = conn.cursor() cursor.execute(query) # submit and disconnect conn.commit() conn.close()</description>
     </item>
   </channel>
 </rss>

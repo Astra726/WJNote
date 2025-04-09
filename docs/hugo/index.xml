@@ -3,7 +3,7 @@
   <channel>
     <title>HUGO</title>
     <link>https://astra726.github.io/WJNote/hugo/index.html</link>
-    <description>子页面列表 {{ range .Pages }} {{ .Title }} {{ end }}</description>
+    <description>子页面列表 {{ range .Pages }} {{ .Title }} {{ end }} https://mcshelby.github.io/hugo-theme-relearn/introduction/index.html&#xA;https://fontawesome.com/icons&#xA;https://www.colormagic.art/zh&#xA;https://markdown.com.cn/basic-syntax/&#xA;{{ $paginator := .Paginate (.Pages.ByTitle) }} {{ range $paginator.Pages }} {{ .Title }}&#xA;{{ end }}&#xA;{{ template “_internal/pagination.html” . }}</description>
     <generator>Hugo</generator>
     <language>en</language>
     <atom:link href="https://astra726.github.io/WJNote/hugo/index.xml" rel="self" type="application/rss+xml" />
@@ -12,21 +12,21 @@
       <link>https://astra726.github.io/WJNote/hugo/theme/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://astra726.github.io/WJNote/hugo/theme/index.html</guid>
-      <description>Built with by Relearn and Hugo. FontAwesome partial&#xA;Go Theme Shortcodes Go Fontawesome Download Magic FontAwesome ​ python 1 print(&#34;Hello World!&#34;) 这是一段 高亮文字。</description>
+      <description>Built with by Relearn and Hugo. FontAwesome Go Theme Shortcodes Go Fontawesome Download Magic FontAwesome ​ python 1 print(&#34;Hello World!&#34;) 这是一段 高亮文字。</description>
     </item>
     <item>
       <title>Quick lookup</title>
       <link>https://astra726.github.io/WJNote/hugo/topic1/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://astra726.github.io/WJNote/hugo/topic1/index.html</guid>
-      <description>Hugo 常用指令 brew install hugo - macOS install. hugo version hugo server - 启动本地服务器。 hugo --gc - 垃圾回收。 生成静态文件 hugo - 默认生成到 public/。 hugo -d docs - 生成静态文件，使用 docs/ 作为发布目录。 在配置文件 hugo.toml 中添加以下语句，可更改发布目录默认为 docs/（ 放到文件顶部）。&#xA;publishDir = &#34;docs&#34; # 静态文件输出目录 Terminal mkdir tech_notes - 创建文件夹 cd tech_notes - 进入文件夹 touch docs/css/custom.css - 创建文件 rm -rf public/ - 删除文件夹 MkDocs mkdocs new [dir-name] - Create a new project. mkdocs serve - Start the live-reloading docs server. mkdocs build - Build the documentation site. mkdocs -h - Print help message and exit. Enable GitHub Pages for Hosting MkDocs After pushing your MkDocs project to GitHub, install the MkDocs GitHub Pages plugin:</description>
+      <description>Hugo 常用指令 brew install hugo - macOS install. hugo version hugo server - 启动本地服务器。 hugo --gc - 垃圾回收。 生成静态文件 hugo - 默认生成到 public/。 hugo -d docs - 生成静态文件，使用 docs/ 作为发布目录。 在配置文件 hugo.toml 中添加以下语句，可更改发布目录默认为 docs/（ 放到文件顶部）。 ​ hugo.toml 1 publishDir = &#34;docs&#34; # 静态文件输出目录 Terminal mkdir tech_notes - 创建文件夹 cd tech_notes - 进入文件夹 touch docs/css/custom.css - 创建文件 rm -rf public/ - 删除文件夹 MkDocs mkdocs new [dir-name] - Create a new project. mkdocs serve - Start the live-reloading docs server. mkdocs build - Build the documentation site. mkdocs -h - Print help message and exit. Enable GitHub Pages for Hosting MkDocs After pushing your MkDocs project to GitHub, install the MkDocs GitHub Pages plugin: 1 pip install mkdocs-material mkdocs-git-revision-date-localized-plugin</description>
     </item>
     <item>
       <title>Github</title>
       <link>https://astra726.github.io/WJNote/hugo/github/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://astra726.github.io/WJNote/hugo/github/index.html</guid>
-      <description>Share and collaborate your project Create a Repository Go to GitHub. Create a new repository for your project by clicking on the New in the Repositories. Name the repository and select whether it should be Public or Private. Check the box for Add a README file. Configure Git Account Check Currently Active Git Account View the account used by the current project (priority: project &gt; global).&#xA;git config --show-origin user.name git config --show-origin user.email View global configuration.</description>
+      <description>Share and collaborate your project Create a Repository Go to GitHub. Create a new repository for your project by clicking on the New in the Repositories. Name the repository and select whether it should be Public or Private. Check the box for Add a README file. Configure Git Account Check Currently Active Git Account View the account used by the current project (priority: project &gt; global).&#xA;1 2 git config --show-origin user.name git config --show-origin user.email View global configuration. 1 git config --global --list | grep user</description>
     </item>
   </channel>
 </rss>

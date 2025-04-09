@@ -5,48 +5,32 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.145.0">
     <meta name="generator" content="Relearn 7.6.0+b932d301d7838f3c1a50e318e216b55ce5cc9148">
-    <meta name="description" content="python 连接 SQL 创建一个查询函数。
-import sqlite3 # 创建一个查询函数 def query_database(query): # 创建 SQLite 连接 conn = sqlite3.connect(db_file_path) cursor = conn.cursor() # 执行 SQL 查询 cursor.execute(query) # 提交更改并关闭连接 conn.commit() conn.close() Print result cursor.fetchall() 返回列表，其中每一行都是一个元组。结果存在内存中。
-# 获取所有结果 result = cursor.fetchall() # 获取指定第 n&#43;1 行 result = cursor.fetchall()[n] cursor.fetchone() 返回查询结果的第一行，如果存在多行，它只会返回第一行的内容。
-# 指定输出第一行的第 n&#43;1 个元素 result = cursor.fetchone()[n] 但是 .fetchone() 每次调用都会取出并移动到下一行，所以可以实现类似 .fetchall()[n] 的功能：
-# 获取第 3 行 result = cursor.fetchone() result = cursor.fetchone() result = cursor.fetchone() # 获取指定第 n&#43;1 行 N = n result = None for _ in range(N): result = cursor.fetchone() print(result) Table operation # Delete table DROP TABLE IF EXISTS TableName # Change table name ALTER TABLE TableName_Old RENAME TO TableName_New # 获取总行数 SELECT COUNT(*) FROM TableName total_rows = cursor.fetchone()[0] Deduplication GROUP BY 中要包括所有需要保持唯一的列。">
+    <meta name="description" content="Python Connecting to SQL Databases Using sqlite3 (Built-in Python). 1 2 3 4 5 6 7 8 9 10 11 12 import sqlite3 def query_database(query): # create SQLite connect conn = sqlite3.connect(db_file_path) cursor = conn.cursor() cursor.execute(query) # submit and disconnect conn.commit() conn.close()">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Operations">
-    <meta name="twitter:description" content="python 连接 SQL 创建一个查询函数。
-import sqlite3 # 创建一个查询函数 def query_database(query): # 创建 SQLite 连接 conn = sqlite3.connect(db_file_path) cursor = conn.cursor() # 执行 SQL 查询 cursor.execute(query) # 提交更改并关闭连接 conn.commit() conn.close() Print result cursor.fetchall() 返回列表，其中每一行都是一个元组。结果存在内存中。
-# 获取所有结果 result = cursor.fetchall() # 获取指定第 n&#43;1 行 result = cursor.fetchall()[n] cursor.fetchone() 返回查询结果的第一行，如果存在多行，它只会返回第一行的内容。
-# 指定输出第一行的第 n&#43;1 个元素 result = cursor.fetchone()[n] 但是 .fetchone() 每次调用都会取出并移动到下一行，所以可以实现类似 .fetchall()[n] 的功能：
-# 获取第 3 行 result = cursor.fetchone() result = cursor.fetchone() result = cursor.fetchone() # 获取指定第 n&#43;1 行 N = n result = None for _ in range(N): result = cursor.fetchone() print(result) Table operation # Delete table DROP TABLE IF EXISTS TableName # Change table name ALTER TABLE TableName_Old RENAME TO TableName_New # 获取总行数 SELECT COUNT(*) FROM TableName total_rows = cursor.fetchone()[0] Deduplication GROUP BY 中要包括所有需要保持唯一的列。">
+    <meta name="twitter:description" content="Python Connecting to SQL Databases Using sqlite3 (Built-in Python). 1 2 3 4 5 6 7 8 9 10 11 12 import sqlite3 def query_database(query): # create SQLite connect conn = sqlite3.connect(db_file_path) cursor = conn.cursor() cursor.execute(query) # submit and disconnect conn.commit() conn.close()">
     <meta property="og:url" content="https://astra726.github.io/WJNote/sql/topic32/index.html">
     <meta property="og:title" content="Operations">
-    <meta property="og:description" content="python 连接 SQL 创建一个查询函数。
-import sqlite3 # 创建一个查询函数 def query_database(query): # 创建 SQLite 连接 conn = sqlite3.connect(db_file_path) cursor = conn.cursor() # 执行 SQL 查询 cursor.execute(query) # 提交更改并关闭连接 conn.commit() conn.close() Print result cursor.fetchall() 返回列表，其中每一行都是一个元组。结果存在内存中。
-# 获取所有结果 result = cursor.fetchall() # 获取指定第 n&#43;1 行 result = cursor.fetchall()[n] cursor.fetchone() 返回查询结果的第一行，如果存在多行，它只会返回第一行的内容。
-# 指定输出第一行的第 n&#43;1 个元素 result = cursor.fetchone()[n] 但是 .fetchone() 每次调用都会取出并移动到下一行，所以可以实现类似 .fetchall()[n] 的功能：
-# 获取第 3 行 result = cursor.fetchone() result = cursor.fetchone() result = cursor.fetchone() # 获取指定第 n&#43;1 行 N = n result = None for _ in range(N): result = cursor.fetchone() print(result) Table operation # Delete table DROP TABLE IF EXISTS TableName # Change table name ALTER TABLE TableName_Old RENAME TO TableName_New # 获取总行数 SELECT COUNT(*) FROM TableName total_rows = cursor.fetchone()[0] Deduplication GROUP BY 中要包括所有需要保持唯一的列。">
+    <meta property="og:description" content="Python Connecting to SQL Databases Using sqlite3 (Built-in Python). 1 2 3 4 5 6 7 8 9 10 11 12 import sqlite3 def query_database(query): # create SQLite connect conn = sqlite3.connect(db_file_path) cursor = conn.cursor() cursor.execute(query) # submit and disconnect conn.commit() conn.close()">
     <meta property="og:locale" content="en">
     <meta property="og:type" content="article">
     <meta property="article:section" content="SQL">
     <meta itemprop="name" content="Operations">
-    <meta itemprop="description" content="python 连接 SQL 创建一个查询函数。
-import sqlite3 # 创建一个查询函数 def query_database(query): # 创建 SQLite 连接 conn = sqlite3.connect(db_file_path) cursor = conn.cursor() # 执行 SQL 查询 cursor.execute(query) # 提交更改并关闭连接 conn.commit() conn.close() Print result cursor.fetchall() 返回列表，其中每一行都是一个元组。结果存在内存中。
-# 获取所有结果 result = cursor.fetchall() # 获取指定第 n&#43;1 行 result = cursor.fetchall()[n] cursor.fetchone() 返回查询结果的第一行，如果存在多行，它只会返回第一行的内容。
-# 指定输出第一行的第 n&#43;1 个元素 result = cursor.fetchone()[n] 但是 .fetchone() 每次调用都会取出并移动到下一行，所以可以实现类似 .fetchall()[n] 的功能：
-# 获取第 3 行 result = cursor.fetchone() result = cursor.fetchone() result = cursor.fetchone() # 获取指定第 n&#43;1 行 N = n result = None for _ in range(N): result = cursor.fetchone() print(result) Table operation # Delete table DROP TABLE IF EXISTS TableName # Change table name ALTER TABLE TableName_Old RENAME TO TableName_New # 获取总行数 SELECT COUNT(*) FROM TableName total_rows = cursor.fetchone()[0] Deduplication GROUP BY 中要包括所有需要保持唯一的列。">
-    <meta itemprop="wordCount" content="301">
+    <meta itemprop="description" content="Python Connecting to SQL Databases Using sqlite3 (Built-in Python). 1 2 3 4 5 6 7 8 9 10 11 12 import sqlite3 def query_database(query): # create SQLite connect conn = sqlite3.connect(db_file_path) cursor = conn.cursor() cursor.execute(query) # submit and disconnect conn.commit() conn.close()">
+    <meta itemprop="wordCount" content="368">
     <title>Operations</title>
-    <link href="/WJNote/fonts/fontawesome/css/fontawesome-all.min.css?1743857149" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/WJNote/fonts/fontawesome/css/fontawesome-all.min.css?1743857149" rel="stylesheet"></noscript>
-    <link href="/WJNote/css/perfect-scrollbar/perfect-scrollbar.min.css?1743857149" rel="stylesheet">
-    <link href="/WJNote/css/theme.min.css?1743857149" rel="stylesheet">
-    <link href="/WJNote/css/format-html.min.css?1743857149" rel="stylesheet" id="R-format-style">
-    <link href="/WJNote/css/auto-complete/auto-complete.min.css?1743857149" rel="stylesheet">
-    <script src="/WJNote/js/auto-complete/auto-complete.min.js?1743857149" defer></script>
-    <script src="/WJNote/js/lunr/lunr.min.js?1743857149" defer></script>
-    <script src="/WJNote/js/lunr/lunr.stemmer.support.min.js?1743857149" defer></script>
-    <script src="/WJNote/js/lunr/lunr.multi.min.js?1743857149" defer></script>
-    <script src="/WJNote/js/lunr/lunr.en.min.js?1743857149" defer></script>
-    <script src="/WJNote/js/search.min.js?1743857149" defer></script>
+    <link href="/WJNote/fonts/fontawesome/css/fontawesome-all.min.css?1744214215" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/WJNote/fonts/fontawesome/css/fontawesome-all.min.css?1744214215" rel="stylesheet"></noscript>
+    <link href="/WJNote/css/perfect-scrollbar/perfect-scrollbar.min.css?1744214215" rel="stylesheet">
+    <link href="/WJNote/css/theme.min.css?1744214215" rel="stylesheet">
+    <link href="/WJNote/css/format-html.min.css?1744214215" rel="stylesheet" id="R-format-style">
+    <link href="/WJNote/css/auto-complete/auto-complete.min.css?1744214215" rel="stylesheet">
+    <script src="/WJNote/js/auto-complete/auto-complete.min.js?1744214215" defer></script>
+    <script src="/WJNote/js/lunr/lunr.min.js?1744214215" defer></script>
+    <script src="/WJNote/js/lunr/lunr.stemmer.support.min.js?1744214215" defer></script>
+    <script src="/WJNote/js/lunr/lunr.multi.min.js?1744214215" defer></script>
+    <script src="/WJNote/js/lunr/lunr.en.min.js?1744214215" defer></script>
+    <script src="/WJNote/js/search.min.js?1744214215" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -56,7 +40,7 @@ import sqlite3 # 创建一个查询函数 def query_database(query): # 创建 SQ
       window.relearn.relBaseUri='..\/..\/..';
       window.relearn.absBaseUri='https:\/\/astra726.github.io\/WJNote';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/WJNote/searchindex.en.js?1743857149";
+      window.relearn.index_js_url="/WJNote/searchindex.en.js?1744214215";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -117,7 +101,7 @@ import sqlite3 # 创建一个查询函数 def query_database(query): # 创建 SQ
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
   <ul>
-    <li><a href="#python-连接-sql">python 连接 SQL</a>
+    <li><a href="#python-connecting-to-sql-databases">Python Connecting to SQL Databases</a>
       <ul>
         <li><a href="#print-result">Print result</a></li>
       </ul>
@@ -174,65 +158,151 @@ import sqlite3 # 创建一个查询函数 def query_database(query): # 创建 SQ
 
 <h1 id="operations">Operations</h1>
 
-<h2 id="python-连接-sql">python 连接 SQL</h2>
-<p>创建一个查询函数。</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>import sqlite3
-
-# 创建一个查询函数
-def query_database(query):
-    # 创建 SQLite 连接
-    conn = sqlite3.connect(db_file_path)
-    cursor = conn.cursor()
-
-    # 执行 SQL 查询
-    cursor.execute(query)
-
-    # 提交更改并关闭连接
-    conn.commit()
-    conn.close()</code></pre></div>
+<h2 id="python-connecting-to-sql-databases">Python Connecting to SQL Databases</h2>
+<p>Using sqlite3 (Built-in Python).
+<div class="highlight wrap-code" dir="auto"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#f92672">import</span> sqlite3
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">query_database</span>(query):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># create SQLite connect</span>
+</span></span><span style="display:flex;"><span>    conn <span style="color:#f92672">=</span> sqlite3<span style="color:#f92672">.</span>connect(db_file_path)
+</span></span><span style="display:flex;"><span>    cursor <span style="color:#f92672">=</span> conn<span style="color:#f92672">.</span>cursor()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    cursor<span style="color:#f92672">.</span>execute(query)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># submit and disconnect</span>
+</span></span><span style="display:flex;"><span>    conn<span style="color:#f92672">.</span>commit()
+</span></span><span style="display:flex;"><span>    conn<span style="color:#f92672">.</span>close()</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</p>
 <h3 id="print-result">Print result</h3>
 <h4 id="cursorfetchall">cursor.fetchall()</h4>
-<p>返回列表，其中每一行都是一个元组。结果存在内存中。</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code># 获取所有结果
-result = cursor.fetchall()
-
-# 获取指定第 n+1 行
-result = cursor.fetchall()[n]</code></pre></div>
+<p>返回列表，其中每一行都是一个元组。结果存在内存中。
+<div class="highlight wrap-code" dir="auto"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># 获取所有结果</span>
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> cursor<span style="color:#f92672">.</span>fetchall()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 获取指定第 n+1 行</span>
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> cursor<span style="color:#f92672">.</span>fetchall()[n]</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</p>
 <h4 id="cursorfetchone">cursor.fetchone()</h4>
-<p>返回查询结果的第一行，如果存在多行，它只会返回第一行的内容。</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code># 指定输出第一行的第 n+1 个元素
-result = cursor.fetchone()[n]</code></pre></div>
-<p>但是 .fetchone() 每次调用都会取出并移动到下一行，所以可以实现类似 .fetchall()[n] 的功能：</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code># 获取第 3 行
-result = cursor.fetchone()
-result = cursor.fetchone()
-result = cursor.fetchone()
-
-# 获取指定第 n+1 行
-N = n
-result = None
-for _ in range(N):
-    result = cursor.fetchone()
-print(result)</code></pre></div>
+<p>返回查询结果的第一行，如果存在多行，它只会返回第一行的内容。
+<div class="highlight wrap-code" dir="auto"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># 指定输出第一行的第 n+1 个元素</span>
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> cursor<span style="color:#f92672">.</span>fetchone()[n]</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</p>
+<p>但是 .fetchone() 每次调用都会取出并移动到下一行，所以可以实现类似 .fetchall()[n] 的功能：
+<div class="highlight wrap-code" dir="auto"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># 获取第 3 行</span>
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> cursor<span style="color:#f92672">.</span>fetchone()
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> cursor<span style="color:#f92672">.</span>fetchone()
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> cursor<span style="color:#f92672">.</span>fetchone()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 获取指定第 n+1 行</span>
+</span></span><span style="display:flex;"><span>N <span style="color:#f92672">=</span> n
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range(N):
+</span></span><span style="display:flex;"><span>    result <span style="color:#f92672">=</span> cursor<span style="color:#f92672">.</span>fetchone()
+</span></span><span style="display:flex;"><span>print(result)</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</p>
 <h2 id="table-operation">Table operation</h2>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code># Delete table
-DROP TABLE IF EXISTS TableName
+<div class="highlight wrap-code" dir="auto"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># Delete table</span>
+</span></span><span style="display:flex;"><span>DROP TABLE IF EXISTS TableName
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Change table name</span>
+</span></span><span style="display:flex;"><span>ALTER TABLE TableName_Old RENAME TO TableName_New
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 获取总行数</span>
+</span></span><span style="display:flex;"><span>SELECT COUNT(<span style="color:#f92672">*</span>) FROM TableName
+</span></span><span style="display:flex;"><span>total_rows <span style="color:#f92672">=</span> cursor<span style="color:#f92672">.</span>fetchone()[<span style="color:#ae81ff">0</span>]</span></span></code></pre></td></tr></table>
+</div>
+</div>
 
-# Change table name
-ALTER TABLE TableName_Old RENAME TO TableName_New
-
-# 获取总行数
-SELECT COUNT(*) FROM TableName
-total_rows = cursor.fetchone()[0]</code></pre></div>
 <h3 id="deduplication">Deduplication</h3>
-<p>GROUP BY 中要包括所有需要保持唯一的列。</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>cursor.execute(&#34;&#34;&#34;
-    DELETE FROM TableName
-    WHERE ROWID NOT IN (
-        SELECT MIN(ROWID)
-        FROM TableName
-        GROUP BY ColumnName1, ColumnName2)
-&#34;&#34;&#34;)</code></pre></div>
+<p>GROUP BY 中要包括所有需要保持唯一的列。
+<div class="highlight wrap-code" dir="auto"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>cursor<span style="color:#f92672">.</span>execute(<span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    DELETE FROM TableName
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    WHERE ROWID NOT IN (
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        SELECT MIN(ROWID)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        FROM TableName
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        GROUP BY ColumnName1, ColumnName2)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>)</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</p>
 <blockquote>
 <p>示例：</p>
 <table>
@@ -275,35 +345,90 @@ total_rows = cursor.fetchone()[0]</code></pre></div>
 <h3 id="delete-column">Delete column</h3>
 <p>SQLite 不支持使用 ALTER TABLE 直接删除列。可以组合操作，创建一个新的表，复制数据时不包括该列，删除原始表，然后重命名新表为原始表的名称。</p>
 <h3 id="add-column">Add Column</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code># 检查表中是否已存在此列
-cursor.execute(&#34;PRAGMA table_info(TableName)&#34;)
-columns = [col[1] for col in cursor.fetchall()]
+<div class="highlight wrap-code" dir="auto"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># 检查表中是否已存在此列</span>
+</span></span><span style="display:flex;"><span>cursor<span style="color:#f92672">.</span>execute(<span style="color:#e6db74">&#34;PRAGMA table_info(TableName)&#34;</span>)
+</span></span><span style="display:flex;"><span>columns <span style="color:#f92672">=</span> [col[<span style="color:#ae81ff">1</span>] <span style="color:#66d9ef">for</span> col <span style="color:#f92672">in</span> cursor<span style="color:#f92672">.</span>fetchall()]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#39;ColumnName&#39;</span> <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> columns:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 创建 ColumnName 列，ColumnType 为数据类型</span>
+</span></span><span style="display:flex;"><span>    cursor<span style="color:#f92672">.</span>execute(<span style="color:#e6db74">&#34;&#34;&#34; ALTER TABLE TableName ADD COLUMN ColumnName ColumnType &#34;&#34;&#34;</span>)</span></span></code></pre></td></tr></table>
+</div>
+</div>
 
-if &#39;ColumnName&#39; not in columns:
-    # 创建 ColumnName 列，ColumnType 为数据类型
-    cursor.execute(&#34;&#34;&#34; ALTER TABLE TableName ADD COLUMN ColumnName ColumnType &#34;&#34;&#34;)</code></pre></div>
 <h2 id="character-operation">Character operation</h2>
 <h3 id="fixed-position">Fixed position</h3>
-<p>执行 UPDATE 语句，以 &lsquo;,&rsquo; 为分隔符选择 ColumnName 列中固定第 n+1 部分：</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>UPDATE TableName
-SET ColumnName = substr(ColumnName, instr(ColumnName, &#39;,&#39;) + n)</code></pre></div>
+<p>执行 UPDATE 语句，以 &lsquo;,&rsquo; 为分隔符选择 ColumnName 列中固定第 n+1 部分：
+<div class="highlight wrap-code" dir="auto"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>UPDATE TableName
+</span></span><span style="display:flex;"><span>SET ColumnName <span style="color:#f92672">=</span> substr(ColumnName, instr(ColumnName, <span style="color:#e6db74">&#39;,&#39;</span>) <span style="color:#f92672">+</span> n)</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</p>
 <h3 id="regular-expression">Regular expression</h3>
-<p><i class="fa-fw fas fa-exclamation-triangle cstyle warning"></i> 表达式顺序：范围小的放到前面以优先匹配。</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>energy_pattern = re.compile(r&#39;(\d+XFFF|2_5X|\d+X|\d+E|\d+HDTSE)&#39;)</code></pre></div>
-<p><i class="fa-fw fas fa-exclamation-triangle cstyle warning"></i> 匹配时也有先后顺序：</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code># 在 MEASURE_GROUP 和 MEASURE_NAME 中搜索能量信息。下面两个表达式有先后顺序。
-match_group = energy_pattern.search(measure_name)
-match_name = energy_pattern.search(measure_group)
-    
-# 提取找到的第一个匹配项
-energy = match_group.group(0) if match_group else (match_name.group(0) if match_name else None)
-
-# 更新表中的新列
-cursor.execute(&#34;&#34;&#34;
-    UPDATE TableName
-    SET ENERGY = ?
-    WHERE ROWID = ?
-&#34;&#34;&#34;, (energy, rowid))</code></pre></div>
+<p>关键词顺序：范围小的放到前面以优先匹配。
+<div class="highlight wrap-code" dir="auto"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>energy_pattern <span style="color:#f92672">=</span> re<span style="color:#f92672">.</span>compile(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;(\d+XFFF|2_5X|\d+X|\d+E|\d+HDTSE)&#39;</span>)</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</p>
+<p>匹配时也有先后顺序。
+<div class="highlight wrap-code" dir="auto"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># 在 MEASURE_GROUP 和 MEASURE_NAME 中搜索能量信息。下面两个表达式有先后顺序。</span>
+</span></span><span style="display:flex;"><span>match_group <span style="color:#f92672">=</span> energy_pattern<span style="color:#f92672">.</span>search(measure_name)
+</span></span><span style="display:flex;"><span>match_name <span style="color:#f92672">=</span> energy_pattern<span style="color:#f92672">.</span>search(measure_group)</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</p>
+<p>提取找到的第一个匹配项。
+<div class="highlight wrap-code" dir="auto"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>energy <span style="color:#f92672">=</span> match_group<span style="color:#f92672">.</span>group(<span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">if</span> match_group <span style="color:#66d9ef">else</span> (match_name<span style="color:#f92672">.</span>group(<span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">if</span> match_name <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">None</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 更新表中的新列</span>
+</span></span><span style="display:flex;"><span>cursor<span style="color:#f92672">.</span>execute(<span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    UPDATE TableName
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    SET ENERGY = ?
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    WHERE ROWID = ?
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>, (energy, rowid))</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</p>
 
   <footer class="footline">
   </footer>
@@ -376,8 +501,8 @@ cursor.execute(&#34;&#34;&#34;
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/WJNote/js/clipboard/clipboard.min.js?1743857149" defer></script>
-    <script src="/WJNote/js/perfect-scrollbar/perfect-scrollbar.min.js?1743857149" defer></script>
-    <script src="/WJNote/js/theme.min.js?1743857149" defer></script>
+    <script src="/WJNote/js/clipboard/clipboard.min.js?1744214215" defer></script>
+    <script src="/WJNote/js/perfect-scrollbar/perfect-scrollbar.min.js?1744214215" defer></script>
+    <script src="/WJNote/js/theme.min.js?1744214215" defer></script>
   </body>
 </html>

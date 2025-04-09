@@ -5,44 +5,32 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.145.0">
     <meta name="generator" content="Relearn 7.6.0+b932d301d7838f3c1a50e318e216b55ce5cc9148">
-    <meta name="description" content="Mac 电脑装机，配置代码环境。
-设置使 Mac 中的 Python 默认指向 Python 3 检查当前 Python 版本和地址 打开终端，运行： python --version python3 --version which python which python3 创建符号链接，将 python 命令链接到 python3。 运行以下命令： # 删除现有的 Python 符号链接： sudo rm /usr/local/bin/python #创建新的符号链接，将 python 链接到 Python 3 的路径： sudo ln -s /Library/Frameworks/Python.framework/Versions/3.13/bin/python3 /usr/local/bin/python 重新运行：python --version，设置成功应该显示 Python 3.x。 安装 pip 检查 pip 是否已经安装：
-python -m ensurepip --upgrade 使用 get-pip.py 安装（如果尚未安装）：
-下载 get-pip.py 脚本： curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py # 运行 get-pip.py 来安装 pip： python get-pip.py # 更新 pip： python -m pip install --upgrade pip vscode 配置解释器 按住 ctrl&#43;shift&#43;p （macOS: cmd&#43;shift&#43;p）输入文本查找并选择 Python:Select Inerpreter。 选择正确的 python 版本。">
+    <meta name="description" content="设置 Python 默认指向 Python3（macOS 系统） 检查当前 Python 版本和地址 打开终端，运行： 1 2 3 4 5 python --version python3 --version which python which python3 创建符号链接，将 python 命令链接到 python3。 运行以下命令： 1 2 3 4 5 # 删除现有的 Python 符号链接： sudo rm /usr/local/bin/python #创建新的符号链接，将 python 链接到 Python 3 的路径： sudo ln -s /Library/Frameworks/Python.framework/Versions/3.13/bin/python3 /usr/local/bin/python">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Environment">
-    <meta name="twitter:description" content="Mac 电脑装机，配置代码环境。
-设置使 Mac 中的 Python 默认指向 Python 3 检查当前 Python 版本和地址 打开终端，运行： python --version python3 --version which python which python3 创建符号链接，将 python 命令链接到 python3。 运行以下命令： # 删除现有的 Python 符号链接： sudo rm /usr/local/bin/python #创建新的符号链接，将 python 链接到 Python 3 的路径： sudo ln -s /Library/Frameworks/Python.framework/Versions/3.13/bin/python3 /usr/local/bin/python 重新运行：python --version，设置成功应该显示 Python 3.x。 安装 pip 检查 pip 是否已经安装：
-python -m ensurepip --upgrade 使用 get-pip.py 安装（如果尚未安装）：
-下载 get-pip.py 脚本： curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py # 运行 get-pip.py 来安装 pip： python get-pip.py # 更新 pip： python -m pip install --upgrade pip vscode 配置解释器 按住 ctrl&#43;shift&#43;p （macOS: cmd&#43;shift&#43;p）输入文本查找并选择 Python:Select Inerpreter。 选择正确的 python 版本。">
+    <meta name="twitter:description" content="设置 Python 默认指向 Python3（macOS 系统） 检查当前 Python 版本和地址 打开终端，运行： 1 2 3 4 5 python --version python3 --version which python which python3 创建符号链接，将 python 命令链接到 python3。 运行以下命令： 1 2 3 4 5 # 删除现有的 Python 符号链接： sudo rm /usr/local/bin/python #创建新的符号链接，将 python 链接到 Python 3 的路径： sudo ln -s /Library/Frameworks/Python.framework/Versions/3.13/bin/python3 /usr/local/bin/python">
     <meta property="og:url" content="https://astra726.github.io/WJNote/python/environment/index.html">
     <meta property="og:title" content="Environment">
-    <meta property="og:description" content="Mac 电脑装机，配置代码环境。
-设置使 Mac 中的 Python 默认指向 Python 3 检查当前 Python 版本和地址 打开终端，运行： python --version python3 --version which python which python3 创建符号链接，将 python 命令链接到 python3。 运行以下命令： # 删除现有的 Python 符号链接： sudo rm /usr/local/bin/python #创建新的符号链接，将 python 链接到 Python 3 的路径： sudo ln -s /Library/Frameworks/Python.framework/Versions/3.13/bin/python3 /usr/local/bin/python 重新运行：python --version，设置成功应该显示 Python 3.x。 安装 pip 检查 pip 是否已经安装：
-python -m ensurepip --upgrade 使用 get-pip.py 安装（如果尚未安装）：
-下载 get-pip.py 脚本： curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py # 运行 get-pip.py 来安装 pip： python get-pip.py # 更新 pip： python -m pip install --upgrade pip vscode 配置解释器 按住 ctrl&#43;shift&#43;p （macOS: cmd&#43;shift&#43;p）输入文本查找并选择 Python:Select Inerpreter。 选择正确的 python 版本。">
+    <meta property="og:description" content="设置 Python 默认指向 Python3（macOS 系统） 检查当前 Python 版本和地址 打开终端，运行： 1 2 3 4 5 python --version python3 --version which python which python3 创建符号链接，将 python 命令链接到 python3。 运行以下命令： 1 2 3 4 5 # 删除现有的 Python 符号链接： sudo rm /usr/local/bin/python #创建新的符号链接，将 python 链接到 Python 3 的路径： sudo ln -s /Library/Frameworks/Python.framework/Versions/3.13/bin/python3 /usr/local/bin/python">
     <meta property="og:locale" content="en">
     <meta property="og:type" content="website">
     <meta itemprop="name" content="Environment">
-    <meta itemprop="description" content="Mac 电脑装机，配置代码环境。
-设置使 Mac 中的 Python 默认指向 Python 3 检查当前 Python 版本和地址 打开终端，运行： python --version python3 --version which python which python3 创建符号链接，将 python 命令链接到 python3。 运行以下命令： # 删除现有的 Python 符号链接： sudo rm /usr/local/bin/python #创建新的符号链接，将 python 链接到 Python 3 的路径： sudo ln -s /Library/Frameworks/Python.framework/Versions/3.13/bin/python3 /usr/local/bin/python 重新运行：python --version，设置成功应该显示 Python 3.x。 安装 pip 检查 pip 是否已经安装：
-python -m ensurepip --upgrade 使用 get-pip.py 安装（如果尚未安装）：
-下载 get-pip.py 脚本： curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py # 运行 get-pip.py 来安装 pip： python get-pip.py # 更新 pip： python -m pip install --upgrade pip vscode 配置解释器 按住 ctrl&#43;shift&#43;p （macOS: cmd&#43;shift&#43;p）输入文本查找并选择 Python:Select Inerpreter。 选择正确的 python 版本。">
-    <meta itemprop="wordCount" content="214">
+    <meta itemprop="description" content="设置 Python 默认指向 Python3（macOS 系统） 检查当前 Python 版本和地址 打开终端，运行： 1 2 3 4 5 python --version python3 --version which python which python3 创建符号链接，将 python 命令链接到 python3。 运行以下命令： 1 2 3 4 5 # 删除现有的 Python 符号链接： sudo rm /usr/local/bin/python #创建新的符号链接，将 python 链接到 Python 3 的路径： sudo ln -s /Library/Frameworks/Python.framework/Versions/3.13/bin/python3 /usr/local/bin/python">
+    <meta itemprop="wordCount" content="246">
     <title>Environment</title>
     <link href="/WJNote/python/environment/index.xml" rel="alternate" type="application/rss+xml" title="Environment">
-    <link href="/WJNote/fonts/fontawesome/css/fontawesome-all.min.css?1743857149" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/WJNote/fonts/fontawesome/css/fontawesome-all.min.css?1743857149" rel="stylesheet"></noscript>
-    <link href="/WJNote/css/perfect-scrollbar/perfect-scrollbar.min.css?1743857149" rel="stylesheet">
-    <link href="/WJNote/css/theme.min.css?1743857149" rel="stylesheet">
-    <link href="/WJNote/css/format-html.min.css?1743857149" rel="stylesheet" id="R-format-style">
-    <link href="/WJNote/css/auto-complete/auto-complete.min.css?1743857149" rel="stylesheet">
-    <script src="/WJNote/js/auto-complete/auto-complete.min.js?1743857149" defer></script>
-    <script src="/WJNote/js/lunr/lunr.min.js?1743857149" defer></script>
-    <script src="/WJNote/js/lunr/lunr.stemmer.support.min.js?1743857149" defer></script>
-    <script src="/WJNote/js/lunr/lunr.multi.min.js?1743857149" defer></script>
-    <script src="/WJNote/js/lunr/lunr.en.min.js?1743857149" defer></script>
-    <script src="/WJNote/js/search.min.js?1743857149" defer></script>
+    <link href="/WJNote/fonts/fontawesome/css/fontawesome-all.min.css?1744214215" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/WJNote/fonts/fontawesome/css/fontawesome-all.min.css?1744214215" rel="stylesheet"></noscript>
+    <link href="/WJNote/css/perfect-scrollbar/perfect-scrollbar.min.css?1744214215" rel="stylesheet">
+    <link href="/WJNote/css/theme.min.css?1744214215" rel="stylesheet">
+    <link href="/WJNote/css/format-html.min.css?1744214215" rel="stylesheet" id="R-format-style">
+    <link href="/WJNote/css/auto-complete/auto-complete.min.css?1744214215" rel="stylesheet">
+    <script src="/WJNote/js/auto-complete/auto-complete.min.js?1744214215" defer></script>
+    <script src="/WJNote/js/lunr/lunr.min.js?1744214215" defer></script>
+    <script src="/WJNote/js/lunr/lunr.stemmer.support.min.js?1744214215" defer></script>
+    <script src="/WJNote/js/lunr/lunr.multi.min.js?1744214215" defer></script>
+    <script src="/WJNote/js/lunr/lunr.en.min.js?1744214215" defer></script>
+    <script src="/WJNote/js/search.min.js?1744214215" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -52,7 +40,7 @@ python -m ensurepip --upgrade 使用 get-pip.py 安装（如果尚未安装）�
       window.relearn.relBaseUri='..\/..\/..';
       window.relearn.absBaseUri='https:\/\/astra726.github.io\/WJNote';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/WJNote/searchindex.en.js?1743857149";
+      window.relearn.index_js_url="/WJNote/searchindex.en.js?1744214215";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -115,7 +103,7 @@ python -m ensurepip --upgrade 使用 get-pip.py 安装（如果尚未安装）�
   <ul>
     <li>
       <ul>
-        <li><a href="#设置使-mac-中的-python-默认指向-python-3">设置使 Mac 中的 Python 默认指向 Python 3</a></li>
+        <li><a href="#设置-python-默认指向-python3macos-系统">设置 Python 默认指向 Python3（macOS 系统）</a></li>
         <li><a href="#安装-pip">安装 pip</a></li>
         <li><a href="#vscode-配置解释器">vscode 配置解释器</a></li>
         <li><a href="#ssl-证书问题">SSL 证书问题</a></li>
@@ -163,48 +151,96 @@ python -m ensurepip --upgrade 使用 get-pip.py 安装（如果尚未安装）�
 
 <h1 id="environment">Environment</h1>
 
-<p>Mac 电脑装机，配置代码环境。</p>
-<h3 id="设置使-mac-中的-python-默认指向-python-3">设置使 Mac 中的 Python 默认指向 Python 3</h3>
+<h3 id="设置-python-默认指向-python3macos-系统">设置 Python 默认指向 Python3（macOS 系统）</h3>
 <ol>
-<li>检查当前 Python 版本和地址
-打开终端，运行：</li>
-</ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>python --version
-python3 --version
-
-which python
-which python3</code></pre></div>
-<ol start="2">
-<li>创建符号链接，将 python 命令链接到 python3。
-运行以下命令：</li>
-</ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code># 删除现有的 Python 符号链接：
-sudo rm /usr/local/bin/python
-
-#创建新的符号链接，将 python 链接到 Python 3 的路径：
-sudo ln -s /Library/Frameworks/Python.framework/Versions/3.13/bin/python3 /usr/local/bin/python</code></pre></div>
-<ol start="3">
-<li>重新运行：<code>python --version</code>，设置成功应该显示 Python 3.x。</li>
+<li>
+<p>检查当前 Python 版本和地址
+打开终端，运行：
+<div class="highlight wrap-code" dir="auto"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>python <span style="color:#f92672">--</span>version
+</span></span><span style="display:flex;"><span>python3 <span style="color:#f92672">--</span>version
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>which python
+</span></span><span style="display:flex;"><span>which python3</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</p>
+</li>
+<li>
+<p>创建符号链接，将 python 命令链接到 python3。
+运行以下命令：
+<div class="highlight wrap-code" dir="auto"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># 删除现有的 Python 符号链接：</span>
+</span></span><span style="display:flex;"><span>sudo rm <span style="color:#f92672">/</span>usr<span style="color:#f92672">/</span>local<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>python
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#创建新的符号链接，将 python 链接到 Python 3 的路径：</span>
+</span></span><span style="display:flex;"><span>sudo ln <span style="color:#f92672">-</span>s <span style="color:#f92672">/</span>Library<span style="color:#f92672">/</span>Frameworks<span style="color:#f92672">/</span>Python<span style="color:#f92672">.</span>framework<span style="color:#f92672">/</span>Versions<span style="color:#f92672">/</span><span style="color:#ae81ff">3.13</span><span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>python3 <span style="color:#f92672">/</span>usr<span style="color:#f92672">/</span>local<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>python</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</p>
+</li>
+<li>
+<p>重新运行：<code>python --version</code>，设置成功应该显示 Python 3.x。</p>
+</li>
 </ol>
 <h3 id="安装-pip">安装 pip</h3>
-<p>检查 pip 是否已经安装：</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>python -m ensurepip --upgrade</code></pre></div>
-<p>使用 get-pip.py 安装（如果尚未安装）：</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>下载 get-pip.py 脚本：
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-
-# 运行 get-pip.py 来安装 pip：
-python get-pip.py
-
-# 更新 pip：
-python -m pip install --upgrade pip</code></pre></div>
+<p>检查 pip 是否已经安装：
+<div class="highlight wrap-code" dir="auto"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>python <span style="color:#f92672">-</span>m ensurepip <span style="color:#f92672">--</span>upgrade</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</p>
+<p>使用 get-pip.py 安装（如果尚未安装）：
+<div class="highlight wrap-code" dir="auto"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>下载 get<span style="color:#f92672">-</span>pip<span style="color:#f92672">.</span>py 脚本<span style="color:#960050;background-color:#1e0010">：</span>
+</span></span><span style="display:flex;"><span>curl https:<span style="color:#f92672">//</span>bootstrap<span style="color:#f92672">.</span>pypa<span style="color:#f92672">.</span>io<span style="color:#f92672">/</span>get<span style="color:#f92672">-</span>pip<span style="color:#f92672">.</span>py <span style="color:#f92672">-</span>o get<span style="color:#f92672">-</span>pip<span style="color:#f92672">.</span>py
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 运行 get-pip.py 来安装 pip：</span>
+</span></span><span style="display:flex;"><span>python get<span style="color:#f92672">-</span>pip<span style="color:#f92672">.</span>py
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 更新 pip：</span>
+</span></span><span style="display:flex;"><span>python <span style="color:#f92672">-</span>m pip install <span style="color:#f92672">--</span>upgrade pip</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</p>
 <h3 id="vscode-配置解释器">vscode 配置解释器</h3>
 <p>按住 <strong>ctrl+shift+p</strong> （macOS: <strong>cmd+shift+p</strong>）输入文本查找并选择 P<strong>ython:Select Inerpreter</strong>。
-<a href="#R-image-489d69e6a995ae25f833ad0e8d2f3bac" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="/WJNote/python/environment/images/1442112.png" style=" height: auto; width: auto;" title=" "></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-489d69e6a995ae25f833ad0e8d2f3bac"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="/WJNote/python/environment/images/1442112.png" title=" "></a>
+<a href="#R-image-cdd77c3c85e201a383c2c72dabf81824" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="/WJNote/python/environment/images/1442112.png" style=" height: auto; width: auto;" title=" "></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cdd77c3c85e201a383c2c72dabf81824"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="/WJNote/python/environment/images/1442112.png" title=" "></a>
 选择正确的 python 版本。
-<a href="#R-image-8d3dacacd2dd7e95aeab6b1054bacf78" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="/WJNote/python/environment/images/12332111.png" style=" height: auto; width: auto;" title=" "></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8d3dacacd2dd7e95aeab6b1054bacf78"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="/WJNote/python/environment/images/12332111.png" title=" "></a></p>
+<a href="#R-image-da20770a944323c38993ec89bdb0010d" class="lightbox-link"><img alt="Example Image" class="lazy lightbox figure-image" loading="lazy" src="/WJNote/python/environment/images/12332111.png" style=" height: auto; width: auto;" title=" "></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-da20770a944323c38993ec89bdb0010d"><img alt="Example Image" class="lazy lightbox lightbox-image" loading="lazy" src="/WJNote/python/environment/images/12332111.png" title=" "></a></p>
 <h3 id="ssl-证书问题">SSL 证书问题</h3>
 <p>pip 安装某些库时报错：There was a problem confirming the ssl certificate: &hellip;。</p>
 <p>解决办法：<strong>关掉代理</strong>。</p>
@@ -212,37 +248,72 @@ python -m pip install --upgrade pip</code></pre></div>
 <p>/bin/bash -c &ldquo;$(curl -fsSL <a href="https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh%29%22" rel="external" target="_blank">https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"</a></p>
 <p>删除与 Python 相关的文件：</p>
 <ul>
-<li>删除全局 Python 可执行文件和链接：</li>
-</ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo rm -f /usr/local/bin/python3
-sudo rm -f /usr/local/bin/python
-sudo rm -f /usr/local/bin/pip3
-sudo rm -f /usr/local/bin/pip</code></pre></div>
-<ul>
+<li>删除全局 Python 可执行文件和链接：
+<div class="highlight wrap-code" dir="auto"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>sudo rm <span style="color:#f92672">-</span>f <span style="color:#f92672">/</span>usr<span style="color:#f92672">/</span>local<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>python3
+</span></span><span style="display:flex;"><span>sudo rm <span style="color:#f92672">-</span>f <span style="color:#f92672">/</span>usr<span style="color:#f92672">/</span>local<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>python
+</span></span><span style="display:flex;"><span>sudo rm <span style="color:#f92672">-</span>f <span style="color:#f92672">/</span>usr<span style="color:#f92672">/</span>local<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>pip3
+</span></span><span style="display:flex;"><span>sudo rm <span style="color:#f92672">-</span>f <span style="color:#f92672">/</span>usr<span style="color:#f92672">/</span>local<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>pip</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</li>
 <li>删除残留的配置文件：
 手动清理残留的配置文件（例如在 ~/.bash_profile, ~/.zshrc 等文件中设置的 Python 环境变量）。</li>
 </ul>
 <h2 id="homebrew">Homebrew</h2>
 <h3 id="安装-brew">安装 brew</h3>
-<p>打开终端，运行以下命令来安装 Homebrew（需要管理员密码）：</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>/bin/bash -c &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&#34;
-
-# 验证 Homebrew 是否安装成功
-brew --version</code></pre></div>
+<p>打开终端，运行以下命令来安装 Homebrew（需要管理员密码）：
+<div class="highlight wrap-code" dir="auto"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>bash <span style="color:#f92672">-</span>c <span style="color:#e6db74">&#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 验证 Homebrew 是否安装成功</span>
+</span></span><span style="display:flex;"><span>brew <span style="color:#f92672">--</span>version</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</p>
 <blockquote>
 <p>如果 curl 命令无法直接下载 Homebrew 安装脚本（Failed to connect to raw.githubusercontent.com port 443 after 1 ms: Couldn&rsquo;t &gt; connect to server，），可以从浏览器直接下载该脚本手动运行：</p>
 <ol>
-<li>在浏览器中访问 URL：https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh。</li>
+<li>在浏览器中访问 URL：<span class="btn interactive  cstyle primary"><a href="https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh" rel="external" target="_blank"><i class="fa-fw fas fa-circle-down"></i> <span class="title">go to install homebrew</span></a></span></li>
+</ol></blockquote>
+<blockquote>
+<ol start="2">
 <li>将脚本下载到本地文件系统。</li>
 <li>在终端中进入文件所在目录并运行：<code>/bin/bash install.sh</code></li>
 </ol></blockquote>
 <h3 id="手动添加-homebrew-到-path">手动添加 Homebrew 到 PATH</h3>
-<p>打开终端输入：</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code># 编辑 ~/.zshrc 文件
-nano ~/.zshrc
-
-#在文件的末尾添加以下内容（Homebrew 默认安装的路径 Apple Silicon Macs）。
-export PATH=&#34;/opt/homebrew/bin:$PATH&#34;</code></pre></div>
+<p>打开终端输入：
+<div class="highlight wrap-code" dir="auto"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e"># 编辑 ~/.zshrc 文件</span>
+</span></span><span style="display:flex;"><span>nano <span style="color:#f92672">~/.</span>zshrc
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#在文件的末尾添加以下内容（Homebrew 默认安装的路径 Apple Silicon Macs）。</span>
+</span></span><span style="display:flex;"><span>export PATH<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/opt/homebrew/bin:$PATH&#34;</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+</p>
 <p>保存并退出编辑器: <span class="btn cstyle transparent"><span><span class="title">Ctrl + X</span></span></span> -&gt; <span class="btn cstyle transparent"><span><span class="title">Y</span></span></span> -&gt; <span class="btn cstyle transparent"><span><span class="title">Enter</span></span></span>。</p>
 <p>重新加载 <strong>~/.zshrc</strong> 文件，使修改生效：<code>source ~/.zshrc</code> 。</p>
 
@@ -318,8 +389,8 @@ export PATH=&#34;/opt/homebrew/bin:$PATH&#34;</code></pre></div>
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/WJNote/js/clipboard/clipboard.min.js?1743857149" defer></script>
-    <script src="/WJNote/js/perfect-scrollbar/perfect-scrollbar.min.js?1743857149" defer></script>
-    <script src="/WJNote/js/theme.min.js?1743857149" defer></script>
+    <script src="/WJNote/js/clipboard/clipboard.min.js?1744214215" defer></script>
+    <script src="/WJNote/js/perfect-scrollbar/perfect-scrollbar.min.js?1744214215" defer></script>
+    <script src="/WJNote/js/theme.min.js?1744214215" defer></script>
   </body>
 </html>
